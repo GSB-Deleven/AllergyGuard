@@ -6,6 +6,12 @@ Diese Anleitung ist für Menschen ohne Programmiererfahrung geschrieben. Jeder S
 
 ---
 
+## 0. Einmalig: `main` als Standard-Branch festlegen
+
+- [ ] **⚙️ Settings → General → Default branch** → auf das Pfeil-Symbol ⇄ klicken → **main** wählen → **Update** → bestätigen.
+
+Warum? GitHub startet Automatiken wie Labels und Wiki nur vom Standard-Branch aus, und nur von `main` wird die App veröffentlicht.
+
 ## 1. Einmalig: Die App online stellen (GitHub Pages)
 
 GitHub Pages ist ein Gratis-Webhosting von GitHub. Das Repository muss dafür **öffentlich** sein (ist es schon).
