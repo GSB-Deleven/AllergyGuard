@@ -23,6 +23,12 @@ GitHub Pages ist ein Gratis-Webhosting von GitHub. Das Repository muss dafür **
 - [ ] Nach 1–2 Minuten ist die App erreichbar unter:
   **https://gsb-deleven.github.io/AllergyGuard/**
 
+**Fehler „Branch "main" is not allowed to deploy to github-pages due to environment protection rules“?**
+GitHub erlaubt Veröffentlichungen nur von bestimmten Branches. Wurde Pages eingeschaltet, als `main` noch nicht der Standard-Branch war, steht `main` nicht auf der Liste. So behebst du das:
+- [ ] **⚙️ Settings → Environments → github-pages**
+- [ ] Unter **Deployment branches and tags** den alten Eintrag löschen und mit **Add deployment branch or tag rule** den Eintrag **`main`** hinzufügen.
+- [ ] **Actions** → den roten Lauf öffnen → **Re-run jobs → Re-run failed jobs**.
+
 ✅ Ein grüner Haken bei Actions heisst: getestet und veröffentlicht. ❌ Ein rotes Kreuz heisst: Ein Test ist fehlgeschlagen, und die alte Version bleibt online. Nichts geht kaputt.
 
 ## 2. Einmalig: Wiki einschalten
