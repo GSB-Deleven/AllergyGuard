@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AllergyGuard</title>
+  <meta name="description" content="Lebensmittel blitzschnell auf Allergene prüfen – Barcode, Zutatenfoto, Allergie-Karte. Gratis, offline-fähig, ohne Konto.">
+  <meta name="theme-color" content="#FFFBF6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1A1A2B" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="AllergyGuard">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob: https://images.openfoodfacts.org https://static.openfoodfacts.org; connect-src 'self' https://world.openfoodfacts.org; script-src 'self' 'wasm-unsafe-eval' blob:; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; media-src 'self' blob:; base-uri 'self'; form-action 'none'">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="modulepreload" href="src/app.js">
+</head>
+<body>
+  <div class="app">
+    <div class="offline-banner" role="status" hidden>Offline – Prüfung mit gespeicherten Daten</div>
+    <main id="main" tabindex="-1">
+      <p class="muted" style="margin-top:40vh;text-align:center">AllergyGuard wird geladen …</p>
+    </main>
+  </div>
+  <nav class="tabbar" aria-label="Hauptnavigation" hidden></nav>
+  <noscript><p style="padding:16px">AllergyGuard braucht JavaScript. Bitte in den Browser-Einstellungen aktivieren.</p></noscript>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

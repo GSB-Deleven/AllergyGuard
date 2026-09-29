@@ -1,0 +1,42 @@
+{
+ "lang": "fr",
+ "name": "Français",
+ "voice": "fr-FR",
+ "reviewed": false,
+ "title": "Carte d'allergie",
+ "intro": "{name} a une allergie alimentaire à : {list}.",
+ "introSevere": "{name} a une allergie grave à : {list}.",
+ "noName": "Cette personne",
+ "kitchen": "Merci d'informer la cuisine.",
+ "avoid": "Merci de ne pas utiliser : {foods}.",
+ "tracesStrict": "Même les plus petites traces sont dangereuses.",
+ "tracesOk": "De petites traces ne posent pas de problème, mais pas comme ingrédient.",
+ "cross": "Merci d'utiliser des couverts, des poêles et des planches propres.",
+ "crossMilk": "Pas de cuisson au beurre, pas de beurre sur le pain ou les légumes, pas de crème dans les sauces, pas d'huile de friture partagée.",
+ "unsure": "Si vous n'êtes pas sûr, dites-le-nous. Ce n'est pas un problème.",
+ "emergency": "En cas d'urgence, appelez le {number}.",
+ "thanks": "Merci beaucoup !",
+ "allergens": {
+  "milk": "protéines de lait de vache (produits laitiers)",
+  "lactose": "lactose (intolérance)",
+  "gluten": "gluten",
+  "eggs": "œufs",
+  "peanuts": "arachides (cacahuètes)",
+  "nuts": "fruits à coque (amandes, noisettes, noix …)",
+  "soybeans": "soja",
+  "fish": "poisson",
+  "crustaceans": "crustacés (crevettes, crabe …)",
+  "molluscs": "mollusques (moules, calamar …)",
+  "sesame": "sésame",
+  "celery": "céleri",
+  "mustard": "moutarde",
+  "lupin": "lupin",
+  "sulphites": "sulfites"
+ },
+ "foods": {
+  "milk": "lait, beurre, crème, fromage, yaourt, lactosérum, caséine, ghee",
+  "lactose": "lait, crème, yaourt, fromage frais, lait en poudre",
+  "gluten": "blé, épeautre, seigle, orge, chapelure, pâtes, pain",
+  "eggs": "œufs, mayonnaise, pâtes aux œufs"
+ }
+}

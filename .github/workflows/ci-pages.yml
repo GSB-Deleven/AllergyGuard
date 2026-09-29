@@ -1,0 +1,54 @@
+# Tests bei jedem Push und Pull Request. Auf "main" wird die App danach
+# automatisch auf GitHub Pages veröffentlicht.
+name: Tests & Veröffentlichen
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prüflogik testen
+        run: node --test
+      - name: Keine Schlüssel oder Passwörter im Code
+        run: node tools/check-secrets.mjs
+
+  deploy:
+    name: Auf GitHub Pages veröffentlichen
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Nur die App-Dateien einpacken
+        run: |
+          mkdir -p _site
+          cp -r index.html manifest.webmanifest sw.js css src data vendor fonts icons _site/
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

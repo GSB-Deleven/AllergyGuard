@@ -1,0 +1,42 @@
+{
+ "lang": "pt",
+ "name": "Português",
+ "voice": "pt-PT",
+ "reviewed": false,
+ "title": "Cartão de alergias",
+ "intro": "{name} tem uma alergia alimentar a: {list}.",
+ "introSevere": "{name} tem uma alergia grave a: {list}.",
+ "noName": "Esta pessoa",
+ "kitchen": "Por favor, informe a cozinha.",
+ "avoid": "Por favor, não use: {foods}.",
+ "tracesStrict": "Mesmo os vestígios mais pequenos são perigosos.",
+ "tracesOk": "Pequenos vestígios não são problema, mas não como ingrediente.",
+ "cross": "Por favor, use talheres, frigideiras e tábuas limpos.",
+ "crossMilk": "Nada frito em manteiga, sem manteiga no pão nem nos legumes, sem natas nos molhos, sem óleo de fritura partilhado.",
+ "unsure": "Se não tiver a certeza, diga-nos, por favor. Não há problema.",
+ "emergency": "Em caso de emergência, ligue {number}.",
+ "thanks": "Muito obrigado!",
+ "allergens": {
+  "milk": "proteína do leite de vaca (lacticínios)",
+  "lactose": "lactose (intolerância)",
+  "gluten": "glúten",
+  "eggs": "ovos",
+  "peanuts": "amendoins",
+  "nuts": "frutos de casca rija (amêndoas, avelãs, nozes …)",
+  "soybeans": "soja",
+  "fish": "peixe",
+  "crustaceans": "crustáceos (camarão, caranguejo …)",
+  "molluscs": "moluscos (mexilhões, lulas …)",
+  "sesame": "sésamo",
+  "celery": "aipo",
+  "mustard": "mostarda",
+  "lupin": "tremoço",
+  "sulphites": "sulfitos"
+ },
+ "foods": {
+  "milk": "leite, manteiga, natas, queijo, iogurte, soro de leite, caseína, ghee",
+  "lactose": "leite, natas, iogurte, queijo fresco, leite em pó",
+  "gluten": "trigo, espelta, centeio, cevada, pão ralado, massa, pão",
+  "eggs": "ovos, maionese, massa com ovo"
+ }
+}

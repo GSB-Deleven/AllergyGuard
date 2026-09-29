@@ -1,0 +1,977 @@
+{
+ "_info": "Von Hand gepflegte Ergänzungen zur automatisch erzeugten Liste (synonyms.generated.json). Jeder Eintrag ist ein Wort, wie es auf Verpackungen steht, mit deutscher Bedeutung. Änderungen bitte immer mit Test in tests/matcher.test.js.",
+ "_sources": [
+  "EU-Verordnung 1169/2011, Anhang II (Pflichtallergene) in den Amtssprachen",
+  "Open-Food-Facts-Taxonomie (ODbL)",
+  "Zutatenlisten realer Produkte aus ES, IT, FR, GR, TR, HR, PT, NL"
+ ],
+ "add": {
+  "milk": {
+   "de": {
+    "Milch": "Milch",
+    "Milcheiweiss": "Milcheiweiss",
+    "Milcheiweiß": "Milcheiweiss",
+    "Kasein": "Kasein (Milcheiweiss)",
+    "Casein": "Kasein (Milcheiweiss)",
+    "Kaseinat": "Kaseinat (Milcheiweiss)",
+    "Laktalbumin": "Laktalbumin (Milcheiweiss)",
+    "Lactalbumin": "Laktalbumin (Milcheiweiss)",
+    "Laktoglobulin": "Laktoglobulin (Milcheiweiss)",
+    "Molke": "Molke",
+    "Rahm": "Rahm/Sahne",
+    "Sahne": "Sahne",
+    "Butter": "Butter",
+    "Käse": "Käse",
+    "Quark": "Quark",
+    "Joghurt": "Joghurt",
+    "Ghee": "Butterreinfett",
+    "Butterschmalz": "Butterreinfett",
+    "Kefir": "Kefir",
+    "Topfen": "Quark",
+    "Schlagobers": "Schlagsahne",
+    "Obers": "Sahne",
+    "Milchpulver": "Milchpulver",
+    "Magermilchpulver": "Magermilchpulver",
+    "Milchzucker": "Laktose",
+    "Laktose": "Laktose",
+    "Lactose": "Laktose",
+    "Mascarpone": "Frischkäse",
+    "Ricotta": "Molkenkäse"
+   },
+   "en": {
+    "milk": "Milch",
+    "milk protein": "Milcheiweiss",
+    "milk solids": "Milchtrockenmasse",
+    "casein": "Kasein",
+    "caseinate": "Kaseinat",
+    "sodium caseinate": "Natriumkaseinat",
+    "whey": "Molke",
+    "whey protein": "Molkeneiweiss",
+    "lactalbumin": "Laktalbumin",
+    "lactoglobulin": "Laktoglobulin",
+    "butter": "Butter",
+    "butterfat": "Butterfett",
+    "butter oil": "Butterreinfett",
+    "cream": "Sahne",
+    "sour cream": "Sauerrahm",
+    "cheese": "Käse",
+    "curd": "Quark",
+    "yogurt": "Joghurt",
+    "yoghurt": "Joghurt",
+    "ghee": "Butterreinfett",
+    "buttermilk": "Buttermilch",
+    "lactose": "Laktose",
+    "skimmed milk powder": "Magermilchpulver",
+    "milk powder": "Milchpulver",
+    "custard": "Vanillecreme (mit Milch)"
+   },
+   "fr": {
+    "lait": "Milch",
+    "protéines de lait": "Milcheiweiss",
+    "lactosérum": "Molke",
+    "petit-lait": "Molke",
+    "babeurre": "Buttermilch",
+    "beurre": "Butter",
+    "beurre concentré": "Butterreinfett",
+    "crème": "Sahne",
+    "crème fraîche": "Crème fraîche",
+    "fromage": "Käse",
+    "fromage blanc": "Quark",
+    "yaourt": "Joghurt",
+    "yogourt": "Joghurt",
+    "caséine": "Kasein",
+    "caséinate": "Kaseinat",
+    "lactose": "Laktose",
+    "poudre de lait": "Milchpulver",
+    "lait écrémé en poudre": "Magermilchpulver",
+    "matière grasse laitière": "Milchfett"
+   },
+   "it": {
+    "latte": "Milch",
+    "proteine del latte": "Milcheiweiss",
+    "latte in polvere": "Milchpulver",
+    "latte scremato in polvere": "Magermilchpulver",
+    "siero di latte": "Molke",
+    "siero di latte in polvere": "Molkenpulver",
+    "latticello": "Buttermilch",
+    "burro": "Butter",
+    "burro anidro": "Butterreinfett",
+    "panna": "Sahne",
+    "formaggio": "Käse",
+    "yogurt": "Joghurt",
+    "caseina": "Kasein",
+    "caseinato": "Kaseinat",
+    "lattosio": "Laktose",
+    "ricotta": "Molkenkäse",
+    "mascarpone": "Frischkäse",
+    "grasso del latte": "Milchfett",
+    "crema di latte": "Sahne"
+   },
+   "es": {
+    "leche": "Milch",
+    "proteína de leche": "Milcheiweiss",
+    "proteínas lácteas": "Milcheiweiss",
+    "leche en polvo": "Milchpulver",
+    "leche desnatada en polvo": "Magermilchpulver",
+    "suero de leche": "Molke",
+    "suero lácteo": "Molke",
+    "lactosuero": "Molke",
+    "mantequilla": "Butter",
+    "nata": "Sahne",
+    "crema de leche": "Sahne",
+    "queso": "Käse",
+    "requesón": "Quark",
+    "yogur": "Joghurt",
+    "yogurt": "Joghurt",
+    "caseína": "Kasein",
+    "caseinato": "Kaseinat",
+    "lactosa": "Laktose",
+    "grasa láctea": "Milchfett",
+    "mantequilla clarificada": "Butterreinfett",
+    "cuajada": "Dickmilch/Quark",
+    "lácteo": "Milchprodukt",
+    "lácteos": "Milchprodukte"
+   },
+   "ca": {
+    "llet": "Milch",
+    "proteïna de llet": "Milcheiweiss",
+    "llet en pols": "Milchpulver",
+    "sèrum de llet": "Molke",
+    "mantega": "Butter",
+    "nata": "Sahne",
+    "formatge": "Käse",
+    "mató": "Frischkäse",
+    "iogurt": "Joghurt",
+    "caseïna": "Kasein",
+    "lactosa": "Laktose",
+    "làctic": "Milch-"
+   },
+   "pt": {
+    "leite": "Milch",
+    "proteína do leite": "Milcheiweiss",
+    "leite em pó": "Milchpulver",
+    "soro de leite": "Molke",
+    "lactossoro": "Molke",
+    "manteiga": "Butter",
+    "natas": "Sahne",
+    "nata": "Sahne",
+    "queijo": "Käse",
+    "requeijão": "Frischkäse",
+    "iogurte": "Joghurt",
+    "caseína": "Kasein",
+    "caseinato": "Kaseinat",
+    "lactose": "Laktose",
+    "leitelho": "Buttermilch"
+   },
+   "nl": {
+    "melk": "Milch",
+    "melkeiwit": "Milcheiweiss",
+    "melkpoeder": "Milchpulver",
+    "mager melkpoeder": "Magermilchpulver",
+    "wei": "Molke",
+    "weipoeder": "Molkenpulver",
+    "wei-eiwit": "Molkeneiweiss",
+    "boter": "Butter",
+    "room": "Sahne",
+    "slagroom": "Schlagsahne",
+    "kaas": "Käse",
+    "kwark": "Quark",
+    "yoghurt": "Joghurt",
+    "caseïne": "Kasein",
+    "caseïnaat": "Kaseinat",
+    "lactose": "Laktose",
+    "karnemelk": "Buttermilch",
+    "melkvet": "Milchfett"
+   },
+   "el": {
+    "γάλα": "Milch",
+    "γάλακτος": "Milch (Genitiv)",
+    "πρωτεΐνες γάλακτος": "Milcheiweiss",
+    "γάλα σε σκόνη": "Milchpulver",
+    "ορός γάλακτος": "Molke",
+    "τυρόγαλα": "Molke",
+    "βούτυρο": "Butter",
+    "κρέμα γάλακτος": "Sahne",
+    "τυρί": "Käse",
+    "γιαούρτι": "Joghurt",
+    "καζεΐνη": "Kasein",
+    "καζεϊνικό νάτριο": "Natriumkaseinat",
+    "λακτόζη": "Laktose",
+    "λακτόζης": "Laktose",
+    "φέτα": "Feta (Käse)",
+    "γραβιέρα": "Graviera (Käse)",
+    "κασέρι": "Kasseri (Käse)",
+    "μυζήθρα": "Mizithra (Käse)",
+    "βουτύρου": "Butter (Genitiv)",
+    "γαλακτοκομικά": "Milchprodukte"
+   },
+   "tr": {
+    "süt": "Milch",
+    "süt proteini": "Milcheiweiss",
+    "süt tozu": "Milchpulver",
+    "yağsız süt tozu": "Magermilchpulver",
+    "peynir altı suyu": "Molke",
+    "peynir altı suyu tozu": "Molkenpulver",
+    "tereyağı": "Butter",
+    "tereyağ": "Butter",
+    "krema": "Sahne",
+    "kaymak": "Rahm",
+    "peynir": "Käse",
+    "yoğurt": "Joghurt",
+    "kazein": "Kasein",
+    "kazeinat": "Kaseinat",
+    "laktoz": "Laktose",
+    "ayran": "Joghurtgetränk",
+    "lor": "Molkenkäse",
+    "süt ürünleri": "Milchprodukte",
+    "sütlü": "mit Milch"
+   },
+   "hr": {
+    "mlijeko": "Milch",
+    "mlijeka": "Milch (Genitiv)",
+    "mlijeko u prahu": "Milchpulver",
+    "sirutka": "Molke",
+    "sirutke": "Molke",
+    "maslac": "Butter",
+    "vrhnje": "Sahne",
+    "sir": "Käse",
+    "jogurt": "Joghurt",
+    "kazein": "Kasein",
+    "laktoza": "Laktose",
+    "mliječni": "Milch-",
+    "mliječne": "Milch-",
+    "mliječnih": "Milch-"
+   },
+   "sl": {
+    "mleko": "Milch",
+    "mleka": "Milch (Genitiv)",
+    "mleko v prahu": "Milchpulver",
+    "sirotka": "Molke",
+    "maslo": "Butter",
+    "smetana": "Sahne",
+    "sir": "Käse",
+    "jogurt": "Joghurt",
+    "laktoza": "Laktose"
+   },
+   "pl": {
+    "mleko": "Milch",
+    "mleka": "Milch (Genitiv)",
+    "mleko w proszku": "Milchpulver",
+    "serwatka": "Molke",
+    "masło": "Butter",
+    "śmietana": "Sahne",
+    "ser": "Käse",
+    "twaróg": "Quark",
+    "jogurt": "Joghurt",
+    "kazeina": "Kasein",
+    "laktoza": "Laktose",
+    "białka mleka": "Milcheiweiss"
+   },
+   "cs": {
+    "mléko": "Milch",
+    "mléka": "Milch (Genitiv)",
+    "sušené mléko": "Milchpulver",
+    "syrovátka": "Molke",
+    "máslo": "Butter",
+    "smetana": "Sahne",
+    "sýr": "Käse",
+    "tvaroh": "Quark",
+    "jogurt": "Joghurt",
+    "kasein": "Kasein",
+    "laktóza": "Laktose",
+    "mléčná bílkovina": "Milcheiweiss"
+   },
+   "sk": {
+    "mlieko": "Milch",
+    "mlieka": "Milch (Genitiv)",
+    "srvátka": "Molke",
+    "maslo": "Butter",
+    "smotana": "Sahne",
+    "syr": "Käse",
+    "tvaroh": "Quark",
+    "jogurt": "Joghurt",
+    "laktóza": "Laktose"
+   },
+   "hu": {
+    "tej": "Milch",
+    "tejpor": "Milchpulver",
+    "savó": "Molke",
+    "tejsavó": "Molke",
+    "vaj": "Butter",
+    "tejszín": "Sahne",
+    "sajt": "Käse",
+    "túró": "Quark",
+    "joghurt": "Joghurt",
+    "kazein": "Kasein",
+    "laktóz": "Laktose",
+    "tejfehérje": "Milcheiweiss"
+   },
+   "ro": {
+    "lapte": "Milch",
+    "lapte praf": "Milchpulver",
+    "zer": "Molke",
+    "unt": "Butter",
+    "smântână": "Sahne",
+    "frișcă": "Schlagsahne",
+    "brânză": "Käse",
+    "iaurt": "Joghurt",
+    "cazeină": "Kasein",
+    "lactoză": "Laktose"
+   },
+   "sv": {
+    "mjölk": "Milch",
+    "mjölkprotein": "Milcheiweiss",
+    "mjölkpulver": "Milchpulver",
+    "vassle": "Molke",
+    "smör": "Butter",
+    "grädde": "Sahne",
+    "ost": "Käse",
+    "yoghurt": "Joghurt",
+    "kasein": "Kasein",
+    "laktos": "Laktose"
+   },
+   "da": {
+    "mælk": "Milch",
+    "mælkeprotein": "Milcheiweiss",
+    "mælkepulver": "Milchpulver",
+    "valle": "Molke",
+    "smør": "Butter",
+    "fløde": "Sahne",
+    "ost": "Käse",
+    "yoghurt": "Joghurt",
+    "kasein": "Kasein",
+    "laktose": "Laktose"
+   },
+   "nb": {
+    "melk": "Milch",
+    "melkeprotein": "Milcheiweiss",
+    "melkepulver": "Milchpulver",
+    "myse": "Molke",
+    "smør": "Butter",
+    "fløte": "Sahne",
+    "ost": "Käse",
+    "yoghurt": "Joghurt",
+    "kasein": "Kasein",
+    "laktose": "Laktose"
+   },
+   "fi": {
+    "maito": "Milch",
+    "maitoa": "Milch",
+    "maitojauhe": "Milchpulver",
+    "hera": "Molke",
+    "heraa": "Molke",
+    "voi": "Butter",
+    "voita": "Butter",
+    "kerma": "Sahne",
+    "juusto": "Käse",
+    "jogurtti": "Joghurt",
+    "kaseiini": "Kasein",
+    "laktoosi": "Laktose",
+    "maitoproteiini": "Milcheiweiss"
+   },
+   "mt": {
+    "ħalib": "Milch",
+    "butir": "Butter",
+    "ġobon": "Käse",
+    "krema": "Sahne"
+   }
+  }
+ },
+ "maybe": {
+  "milk": {
+   "de": {
+    "Margarine": "kann Milchbestandteile enthalten",
+    "Milchsäurebakterien": "meist unbedenklich, können aber auf Milch gezüchtet sein",
+    "Schokolade": "enthält oft Milch – Zutaten prüfen",
+    "Aroma": "kann Milchbestandteile enthalten",
+    "natürliches Aroma": "kann Milchbestandteile enthalten"
+   },
+   "en": {
+    "margarine": "kann Milchbestandteile enthalten",
+    "chocolate": "enthält oft Milch – Zutaten prüfen",
+    "natural flavour": "kann Milchbestandteile enthalten",
+    "natural flavor": "kann Milchbestandteile enthalten",
+    "non-dairy creamer": "enthält oft Kasein"
+   },
+   "fr": {
+    "margarine": "kann Milchbestandteile enthalten",
+    "chocolat": "enthält oft Milch – Zutaten prüfen",
+    "arôme naturel": "kann Milchbestandteile enthalten"
+   },
+   "it": {
+    "margarina": "kann Milchbestandteile enthalten",
+    "cioccolato": "enthält oft Milch – Zutaten prüfen",
+    "crema": "Creme – oft mit Milch",
+    "aroma naturale": "kann Milchbestandteile enthalten"
+   },
+   "es": {
+    "margarina": "kann Milchbestandteile enthalten",
+    "manteca": "in Spanien meist Schmalz, in Lateinamerika Butter",
+    "chocolate": "enthält oft Milch – Zutaten prüfen",
+    "crema": "Creme – oft mit Milch",
+    "aroma natural": "kann Milchbestandteile enthalten"
+   },
+   "ca": {
+    "margarina": "kann Milchbestandteile enthalten",
+    "xocolata": "enthält oft Milch – Zutaten prüfen",
+    "crema": "Creme – oft mit Milch"
+   },
+   "pt": {
+    "margarina": "kann Milchbestandteile enthalten",
+    "chocolate": "enthält oft Milch – Zutaten prüfen",
+    "creme": "Creme – oft mit Milch"
+   },
+   "tr": {
+    "margarin": "kann Milchbestandteile enthalten",
+    "çikolata": "enthält oft Milch – Zutaten prüfen"
+   },
+   "el": {
+    "μαργαρίνη": "kann Milchbestandteile enthalten",
+    "σοκολάτα": "enthält oft Milch – Zutaten prüfen",
+    "κρέμα": "Creme – oft mit Milch"
+   },
+   "nl": {
+    "margarine": "kann Milchbestandteile enthalten",
+    "chocolade": "enthält oft Milch – Zutaten prüfen"
+   },
+   "hr": {
+    "margarin": "kann Milchbestandteile enthalten",
+    "čokolada": "enthält oft Milch – Zutaten prüfen"
+   }
+  }
+ },
+ "exceptions": {
+  "_info": "Wörter, die ein Milch-Wort enthalten, aber keine Milch sind. Sie werden im Ergebnis als Hinweis gezeigt und nicht als Milch gewertet. Alles andere im Text wird trotzdem geprüft.",
+  "milk": [
+   {
+    "phrase": "Kokosmilch",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "Kokosnussmilch",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "Kokoscreme",
+    "de": "Kokoscreme (pflanzlich)"
+   },
+   {
+    "phrase": "Kakaobutter",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "Erdnussbutter",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "Sheabutter",
+    "de": "Sheabutter (pflanzlich)"
+   },
+   {
+    "phrase": "Mandelmilch",
+    "de": "Mandeldrink (pflanzlich)"
+   },
+   {
+    "phrase": "Hafermilch",
+    "de": "Haferdrink (pflanzlich)"
+   },
+   {
+    "phrase": "Sojamilch",
+    "de": "Sojadrink (pflanzlich)"
+   },
+   {
+    "phrase": "Reismilch",
+    "de": "Reisdrink (pflanzlich)"
+   },
+   {
+    "phrase": "Milchsäure",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "Butternuss",
+    "de": "Butternusskürbis"
+   },
+   {
+    "phrase": "Butternut",
+    "de": "Butternusskürbis"
+   },
+   {
+    "phrase": "Weinsteinbackpulver",
+    "de": "Weinstein – keine Milch"
+   },
+   {
+    "phrase": "coconut milk",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "coconut cream",
+    "de": "Kokoscreme (pflanzlich)"
+   },
+   {
+    "phrase": "cream of coconut",
+    "de": "Kokoscreme (pflanzlich)"
+   },
+   {
+    "phrase": "creamed coconut",
+    "de": "Kokoscreme (pflanzlich)"
+   },
+   {
+    "phrase": "cocoa butter",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "peanut butter",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "shea butter",
+    "de": "Sheabutter (pflanzlich)"
+   },
+   {
+    "phrase": "almond milk",
+    "de": "Mandeldrink (pflanzlich)"
+   },
+   {
+    "phrase": "oat milk",
+    "de": "Haferdrink (pflanzlich)"
+   },
+   {
+    "phrase": "soy milk",
+    "de": "Sojadrink (pflanzlich)"
+   },
+   {
+    "phrase": "soya milk",
+    "de": "Sojadrink (pflanzlich)"
+   },
+   {
+    "phrase": "rice milk",
+    "de": "Reisdrink (pflanzlich)"
+   },
+   {
+    "phrase": "lactic acid",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "cream of tartar",
+    "de": "Weinstein – keine Milch"
+   },
+   {
+    "phrase": "butternut",
+    "de": "Butternusskürbis"
+   },
+   {
+    "phrase": "lait de coco",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "crème de coco",
+    "de": "Kokoscreme (pflanzlich)"
+   },
+   {
+    "phrase": "beurre de cacao",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "beurre de cacahuète",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "beurre de karité",
+    "de": "Sheabutter (pflanzlich)"
+   },
+   {
+    "phrase": "lait d'amande",
+    "de": "Mandeldrink (pflanzlich)"
+   },
+   {
+    "phrase": "lait de soja",
+    "de": "Sojadrink (pflanzlich)"
+   },
+   {
+    "phrase": "acide lactique",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "crème de tartre",
+    "de": "Weinstein – keine Milch"
+   },
+   {
+    "phrase": "crème de marrons",
+    "de": "Maronencreme"
+   },
+   {
+    "phrase": "latte di cocco",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "burro di cacao",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "burro di arachidi",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "latte di mandorla",
+    "de": "Mandeldrink (pflanzlich)"
+   },
+   {
+    "phrase": "latte di soia",
+    "de": "Sojadrink (pflanzlich)"
+   },
+   {
+    "phrase": "acido lattico",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "crema di nocciole",
+    "de": "Haselnusscreme – Zutaten prüfen"
+   },
+   {
+    "phrase": "leche de coco",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "crema de coco",
+    "de": "Kokoscreme (pflanzlich)"
+   },
+   {
+    "phrase": "manteca de cacao",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "mantequilla de cacao",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "mantequilla de cacahuete",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "mantequilla de maní",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "leche de almendras",
+    "de": "Mandeldrink (pflanzlich)"
+   },
+   {
+    "phrase": "leche de soja",
+    "de": "Sojadrink (pflanzlich)"
+   },
+   {
+    "phrase": "leche de avena",
+    "de": "Haferdrink (pflanzlich)"
+   },
+   {
+    "phrase": "leche de arroz",
+    "de": "Reisdrink (pflanzlich)"
+   },
+   {
+    "phrase": "ácido láctico",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "crema de avellanas",
+    "de": "Haselnusscreme – Zutaten prüfen"
+   },
+   {
+    "phrase": "crema de cacao",
+    "de": "Kakaocreme – Zutaten prüfen"
+   },
+   {
+    "phrase": "llet de coco",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "mantega de cacau",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "àcid làctic",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "leite de coco",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "manteiga de cacau",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "manteiga de amendoim",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "ácido láctico",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "kokosmelk",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "cacaoboter",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "pindakaas",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "melkzuur",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "γάλα καρύδας",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "βούτυρο κακάο",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "βούτυρο κακάου",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "βούτυρο φυστικιού",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "γαλακτικό οξύ",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "hindistan cevizi sütü",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "kakao yağı",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "fıstık ezmesi",
+    "de": "Erdnussbutter (pflanzlich)"
+   },
+   {
+    "phrase": "laktik asit",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "kokosovo mlijeko",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "kakao maslac",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "mliječna kiselina",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "masło kakaowe",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "mleko kokosowe",
+    "de": "Kokosmilch (pflanzlich)"
+   },
+   {
+    "phrase": "kwas mlekowy",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "kakaové máslo",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "kyselina mléčná",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "kakaóvaj",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "tejsav",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "kakaosmör",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "mjölksyra",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "kakaosmør",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "mælkesyre",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "melkesyre",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "kaakaovoi",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "maitohappo",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "unt de cacao",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "acid lactic",
+    "de": "Milchsäure (E270) – trotz Name keine Milch"
+   },
+   {
+    "phrase": "mushroom",
+    "de": "Pilz – keine Milch"
+   },
+   {
+    "phrase": "mushrooms",
+    "de": "Pilze – keine Milch"
+   },
+   {
+    "phrase": "edamame",
+    "de": "Edamame (Sojabohnen)"
+   },
+   {
+    "phrase": "savoy",
+    "de": "Wirsing"
+   },
+   {
+    "phrase": "savoie",
+    "de": "Savoyen / Wirsing"
+   },
+   {
+    "phrase": "savooikool",
+    "de": "Wirsing"
+   },
+   {
+    "phrase": "savory",
+    "de": "Bohnenkraut"
+   },
+   {
+    "phrase": "custard apple",
+    "de": "Zimtapfel (Frucht)"
+   },
+   {
+    "phrase": "custard squash",
+    "de": "Kürbis"
+   }
+  ]
+ },
+ "traces": {
+  "_info": "Satzanfänge, die einen Spuren-Hinweis einleiten. Alles bis zum Satzende gilt als 'Spuren'.",
+  "phrases": [
+   "kann spuren",
+   "spuren von",
+   "kann enthalten",
+   "hergestellt in einem betrieb",
+   "in einem betrieb hergestellt",
+   "may contain",
+   "may also contain",
+   "traces of",
+   "made in a factory",
+   "produced in a factory",
+   "manufactured in a facility",
+   "made on equipment",
+   "peut contenir",
+   "traces de",
+   "traces éventuelles",
+   "traces possibles",
+   "può contenere",
+   "puo contenere",
+   "tracce di",
+   "prodotto in uno stabilimento",
+   "puede contener",
+   "trazas de",
+   "elaborado en una fábrica",
+   "fabricado en una planta",
+   "pot contenir",
+   "traces de",
+   "pode conter",
+   "vestígios de",
+   "traços de",
+   "kan sporen",
+   "sporen van",
+   "kan bevatten",
+   "μπορεί να περιέχει",
+   "ίχνη",
+   "eser miktarda",
+   "içerebilir",
+   "može sadržavati",
+   "može sadržati",
+   "tragove",
+   "u tragovima",
+   "lahko vsebuje",
+   "sledi",
+   "może zawierać",
+   "śladowe ilości",
+   "může obsahovat",
+   "stopy",
+   "môže obsahovať",
+   "nyomokban",
+   "tartalmazhat",
+   "poate conține",
+   "poate contine",
+   "urme de",
+   "kan innehålla",
+   "spår av",
+   "kan indeholde",
+   "spor af",
+   "kan inneholde",
+   "spor av",
+   "voi sisältää",
+   "jäämiä"
+  ]
+ },
+ "negations": {
+  "_info": "Wörter, die ein Allergen verneinen (z. B. 'laktosefrei', 'sans lait'). Solche Stellen zählen nicht als Treffer, werden aber als Hinweis gezeigt.",
+  "prefix": [
+   "ohne",
+   "frei von",
+   "without",
+   "free from",
+   "no",
+   "sans",
+   "sin",
+   "senza",
+   "sem",
+   "zonder",
+   "χωρίς",
+   "bez",
+   "utan",
+   "uden",
+   "uten",
+   "fără",
+   "fara",
+   "brez",
+   "mentes"
+  ],
+  "suffix": [
+   "frei",
+   "-frei",
+   "free",
+   "-free",
+   "vrij",
+   "fri",
+   "içermez",
+   "mentes",
+   "-mentes",
+   "vapaa"
+  ]
+ }
+}

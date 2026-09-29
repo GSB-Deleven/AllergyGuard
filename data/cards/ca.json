@@ -1,0 +1,42 @@
+{
+ "lang": "ca",
+ "name": "Català",
+ "voice": "ca-ES",
+ "reviewed": false,
+ "title": "Targeta d'al·lèrgies",
+ "intro": "{name} té una al·lèrgia alimentària a: {list}.",
+ "introSevere": "{name} té una al·lèrgia greu a: {list}.",
+ "noName": "Aquesta persona",
+ "kitchen": "Si us plau, informeu la cuina.",
+ "avoid": "Si us plau, no feu servir: {foods}.",
+ "tracesStrict": "Fins i tot les traces més petites són perilloses.",
+ "tracesOk": "Petites traces no són un problema, però no com a ingredient.",
+ "cross": "Si us plau, feu servir coberts, paelles i taulers nets.",
+ "crossMilk": "Res fregit amb mantega, sense mantega al pa ni a les verdures, sense nata a les salses, sense oli de fregir compartit.",
+ "unsure": "Si no n'esteu segurs, digueu-nos-ho, si us plau. No passa res.",
+ "emergency": "En cas d'emergència, truqueu al {number}.",
+ "thanks": "Moltes gràcies!",
+ "allergens": {
+  "milk": "proteïna de la llet de vaca (lactis)",
+  "lactose": "lactosa (intolerància)",
+  "gluten": "gluten",
+  "eggs": "ou",
+  "peanuts": "cacauets",
+  "nuts": "fruits de closca (ametlles, avellanes, nous …)",
+  "soybeans": "soja",
+  "fish": "peix",
+  "crustaceans": "crustacis (gambes, cranc …)",
+  "molluscs": "mol·luscs (musclos, calamar …)",
+  "sesame": "sèsam",
+  "celery": "api",
+  "mustard": "mostassa",
+  "lupin": "tramussos",
+  "sulphites": "sulfits"
+ },
+ "foods": {
+  "milk": "llet, mantega, nata, formatge, iogurt, sèrum de llet, caseïna, ghee",
+  "lactose": "llet, nata, iogurt, formatge fresc, llet en pols",
+  "gluten": "blat, espelta, sègol, ordi, pa ratllat, pasta, pa",
+  "eggs": "ou, maionesa, pasta d'ou"
+ }
+}

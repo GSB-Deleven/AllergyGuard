@@ -1,0 +1,16 @@
+name: "🌍 Übersetzung verbessern"
+description: "Ein Text der Allergie-Karte oder ein Wort in der Wörterliste ist falsch oder fehlt."
+labels: ["übersetzung"]
+body:
+  - type: input
+    id: sprache
+    attributes:
+      label: Sprache
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: Was ist falsch und wie wäre es richtig?
+    validations:
+      required: true

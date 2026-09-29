@@ -1,0 +1,15 @@
+# Geheimnisse – gehören nie ins Repo
+.env
+.env.*
+.dev.vars
+*.secret*
+*secret*.json
+ANLEITUNG-PRIVAT.md
+
+# System- und Editor-Dateien
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/
+_site/

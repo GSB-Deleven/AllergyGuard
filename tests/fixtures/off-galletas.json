@@ -1,0 +1,19 @@
+{
+  "_note": "Nachgebaute Antwort im Format der Open-Food-Facts-API v2 (Beispielprodukt, keine echte Produktnummer).",
+  "code": "0000000000017",
+  "status": 1,
+  "status_verbose": "product found",
+  "product": {
+    "code": "0000000000017",
+    "lang": "es",
+    "product_name": "Galletas María",
+    "brands": "Ejemplo, Marca B",
+    "image_front_small_url": "https://images.openfoodfacts.org/example.jpg",
+    "ingredients_text": "Harina de trigo, azúcar, aceite de girasol, suero lácteo en polvo, gasificantes, sal. Puede contener trazas de soja.",
+    "ingredients_text_es": "Harina de trigo, azúcar, aceite de girasol, suero lácteo en polvo, gasificantes, sal. Puede contener trazas de soja.",
+    "ingredients_text_de": "Weizenmehl, Zucker, Sonnenblumenöl, Molkenpulver, Backtriebmittel, Salz. Kann Spuren von Soja enthalten.",
+    "allergens_tags": ["en:gluten", "en:milk"],
+    "traces_tags": ["en:soybeans"],
+    "last_modified_t": 1756000000
+  }
+}

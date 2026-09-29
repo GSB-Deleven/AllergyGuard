@@ -1,0 +1,37 @@
+name: "🚨 Falsches Ergebnis"
+description: "Die App hat ein Produkt falsch bewertet (z. B. Milch übersehen oder zu Unrecht gewarnt)."
+title: "Falsches Ergebnis: "
+labels: ["falsches-ergebnis", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke! Jede Meldung macht die Wörterliste besser. **Bitte keine persönlichen Gesundheitsdaten** (Name, Diagnosen) eintragen.
+  - type: input
+    id: barcode
+    attributes:
+      label: Barcode-Nummer (falls vorhanden)
+      placeholder: "z. B. 7610000000000"
+  - type: textarea
+    id: ergebnis
+    attributes:
+      label: Was hat die App angezeigt?
+      placeholder: "z. B. „Keine Milch gefunden“"
+    validations:
+      required: true
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Was wäre richtig gewesen und warum?
+      placeholder: "z. B. In der Zutatenliste steht „latticello“ – das ist Buttermilch."
+    validations:
+      required: true
+  - type: textarea
+    id: zutaten
+    attributes:
+      label: Zutatenliste (abtippen oder Foto anhängen)
+  - type: input
+    id: land
+    attributes:
+      label: Land / Sprache der Verpackung
+      placeholder: "z. B. Italien"

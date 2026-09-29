@@ -1,0 +1,45 @@
+{
+ "_info": "Länder und Regionen für die Allergie-Karte. bbox = [Breite min, Länge min, Breite max, Länge max], grob vereinfacht; wird nur für einen Vorschlag genutzt und ist immer von Hand überschreibbar. Regionen stehen vor dem Land, die kleinste passende gewinnt.",
+ "countries": [
+  { "id": "CH", "name": "Schweiz", "flag": "🇨🇭", "languages": ["de", "fr", "it"], "emergency": "144 / 112", "tz": ["Europe/Zurich"], "bbox": [45.8, 5.9, 47.85, 10.5],
+    "regions": [
+      { "id": "CH-DE", "name": "Deutschschweiz", "languages": ["de", "fr"], "bbox": [46.5, 7.2, 47.85, 10.5] },
+      { "id": "CH-FR", "name": "Romandie", "languages": ["fr", "de"], "bbox": [45.8, 5.9, 47.5, 7.25] },
+      { "id": "CH-TI", "name": "Tessin", "languages": ["it", "de"], "bbox": [45.8, 8.35, 46.65, 9.2] }
+    ] },
+  { "id": "DE", "name": "Deutschland", "flag": "🇩🇪", "languages": ["de"], "emergency": "112", "tz": ["Europe/Berlin"], "bbox": [47.2, 5.8, 55.1, 15.1] },
+  { "id": "AT", "name": "Österreich", "flag": "🇦🇹", "languages": ["de"], "emergency": "144 / 112", "tz": ["Europe/Vienna"], "bbox": [46.35, 9.5, 49.05, 17.2] },
+  { "id": "IT", "name": "Italien", "flag": "🇮🇹", "languages": ["it"], "emergency": "112", "tz": ["Europe/Rome"], "bbox": [35.4, 6.6, 47.1, 18.6],
+    "regions": [
+      { "id": "IT-BZ", "name": "Südtirol", "languages": ["de", "it"], "bbox": [46.2, 10.4, 47.1, 12.5] },
+      { "id": "IT-SAR", "name": "Sardinien", "languages": ["it"], "bbox": [38.8, 8.1, 41.3, 9.9] },
+      { "id": "IT-SIC", "name": "Sizilien", "languages": ["it"], "bbox": [36.6, 12.3, 38.4, 15.7] }
+    ] },
+  { "id": "FR", "name": "Frankreich", "flag": "🇫🇷", "languages": ["fr"], "emergency": "15 / 112", "tz": ["Europe/Paris"], "bbox": [41.3, -5.2, 51.1, 9.6],
+    "regions": [ { "id": "FR-COR", "name": "Korsika", "languages": ["fr", "it"], "bbox": [41.3, 8.5, 43.05, 9.6] } ] },
+  { "id": "ES", "name": "Spanien", "flag": "🇪🇸", "languages": ["es"], "emergency": "112", "tz": ["Europe/Madrid", "Atlantic/Canary", "Africa/Ceuta"], "bbox": [27.6, -18.2, 43.8, 4.4],
+    "regions": [
+      { "id": "ES-IB", "name": "Mallorca / Balearen", "languages": ["es", "ca"], "bbox": [38.6, 1.1, 40.1, 4.4] },
+      { "id": "ES-CT", "name": "Barcelona / Katalonien", "languages": ["ca", "es"], "bbox": [40.5, 0.15, 42.9, 3.35] },
+      { "id": "ES-VC", "name": "Valencia", "languages": ["es", "ca"], "bbox": [37.8, -1.6, 40.8, 0.7] },
+      { "id": "ES-CN", "name": "Kanarische Inseln", "languages": ["es"], "bbox": [27.6, -18.2, 29.5, -13.3], "tz": ["Atlantic/Canary"] },
+      { "id": "ES-AN", "name": "Andalusien", "languages": ["es"], "bbox": [36.0, -7.6, 38.75, -1.6] }
+    ] },
+  { "id": "PT", "name": "Portugal", "flag": "🇵🇹", "languages": ["pt"], "emergency": "112", "tz": ["Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores"], "bbox": [32.4, -31.3, 42.2, -6.2] },
+  { "id": "GB", "name": "Grossbritannien", "flag": "🇬🇧", "languages": ["en"], "emergency": "999 / 112", "tz": ["Europe/London"], "bbox": [49.9, -8.2, 60.9, 1.8] },
+  { "id": "IE", "name": "Irland", "flag": "🇮🇪", "languages": ["en"], "emergency": "112 / 999", "tz": ["Europe/Dublin"], "bbox": [51.4, -10.5, 55.4, -6.0] },
+  { "id": "NL", "name": "Niederlande", "flag": "🇳🇱", "languages": ["nl", "en"], "emergency": "112", "tz": ["Europe/Amsterdam"], "bbox": [50.75, 3.35, 53.6, 7.25] },
+  { "id": "BE", "name": "Belgien", "flag": "🇧🇪", "languages": ["nl", "fr"], "emergency": "112", "tz": ["Europe/Brussels"], "bbox": [49.5, 2.5, 51.5, 6.4],
+    "regions": [
+      { "id": "BE-VLG", "name": "Flandern", "languages": ["nl", "fr"], "bbox": [50.7, 2.5, 51.5, 5.9] },
+      { "id": "BE-WAL", "name": "Wallonie", "languages": ["fr", "nl"], "bbox": [49.5, 2.8, 50.8, 6.4] }
+    ] },
+  { "id": "GR", "name": "Griechenland", "flag": "🇬🇷", "languages": ["el", "en"], "emergency": "112", "tz": ["Europe/Athens"], "bbox": [34.8, 19.3, 41.8, 29.7] },
+  { "id": "CY", "name": "Zypern", "flag": "🇨🇾", "languages": ["el", "tr", "en"], "emergency": "112", "tz": ["Asia/Nicosia", "Asia/Famagusta"], "bbox": [34.5, 32.2, 35.75, 34.65] },
+  { "id": "TR", "name": "Türkei", "flag": "🇹🇷", "languages": ["tr", "en"], "emergency": "112", "tz": ["Europe/Istanbul"], "bbox": [35.8, 25.6, 42.2, 44.9] },
+  { "id": "HR", "name": "Kroatien", "flag": "🇭🇷", "languages": ["hr", "de", "en"], "emergency": "112", "tz": ["Europe/Zagreb"], "bbox": [42.35, 13.4, 46.6, 19.5] },
+  { "id": "MT", "name": "Malta", "flag": "🇲🇹", "languages": ["en"], "emergency": "112", "tz": ["Europe/Malta"], "bbox": [35.78, 14.15, 36.1, 14.6] },
+  { "id": "US", "name": "USA", "flag": "🇺🇸", "languages": ["en", "es"], "emergency": "911", "tz": ["America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles", "America/Phoenix", "America/Anchorage", "Pacific/Honolulu"], "bbox": [18.9, -171.8, 71.4, -66.9] },
+  { "id": "OTHER", "name": "Anderes Land", "flag": "🌍", "languages": ["en"], "emergency": "112", "tz": [] }
+ ]
+}

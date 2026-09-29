@@ -1,0 +1,42 @@
+{
+ "lang": "nl",
+ "name": "Nederlands",
+ "voice": "nl-NL",
+ "reviewed": false,
+ "title": "Allergiekaart",
+ "intro": "{name} heeft een voedselallergie voor: {list}.",
+ "introSevere": "{name} heeft een ernstige allergie voor: {list}.",
+ "noName": "Deze persoon",
+ "kitchen": "Wilt u de keuken informeren?",
+ "avoid": "Gebruik alstublieft geen: {foods}.",
+ "tracesStrict": "Zelfs de kleinste sporen zijn gevaarlijk.",
+ "tracesOk": "Kleine sporen zijn geen probleem, maar niet als ingrediënt.",
+ "cross": "Gebruik alstublieft schoon bestek, schone pannen en snijplanken.",
+ "crossMilk": "Niet bakken in boter, geen boter op brood of groente, geen room in sauzen, geen gedeelde frituurolie.",
+ "unsure": "Als u het niet zeker weet, zeg het dan gerust. Dat is helemaal goed.",
+ "emergency": "Bel in een noodgeval {number}.",
+ "thanks": "Hartelijk dank!",
+ "allergens": {
+  "milk": "koemelkeiwit (zuivel)",
+  "lactose": "lactose (intolerantie)",
+  "gluten": "gluten",
+  "eggs": "eieren",
+  "peanuts": "pinda's",
+  "nuts": "noten (amandelen, hazelnoten, walnoten …)",
+  "soybeans": "soja",
+  "fish": "vis",
+  "crustaceans": "schaaldieren (garnalen, krab …)",
+  "molluscs": "weekdieren (mosselen, inktvis …)",
+  "sesame": "sesam",
+  "celery": "selderij",
+  "mustard": "mosterd",
+  "lupin": "lupine",
+  "sulphites": "sulfiet"
+ },
+ "foods": {
+  "milk": "melk, boter, room, kaas, yoghurt, wei, caseïne, ghee",
+  "lactose": "melk, room, yoghurt, roomkaas, melkpoeder",
+  "gluten": "tarwe, spelt, rogge, gerst, paneermeel, pasta, brood",
+  "eggs": "eieren, mayonaise, eierpasta"
+ }
+}

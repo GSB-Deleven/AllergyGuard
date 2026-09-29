@@ -1,0 +1,15 @@
+{
+  "name": "allergyguard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lebensmittel blitzschnell auf Allergene prüfen – Barcode, Zutatenfoto, Allergie-Karte. Gratis, offline-fähig, ohne Konto.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 8765",
+    "check-secrets": "node tools/check-secrets.mjs",
+    "update-synonyms": "node tools/update-synonyms.mjs",
+    "screenshots": "node tools/screenshots.mjs"
+  }
+}

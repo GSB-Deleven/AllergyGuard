@@ -1,0 +1,42 @@
+{
+ "lang": "de",
+ "name": "Deutsch",
+ "voice": "de-DE",
+ "reviewed": true,
+ "title": "Allergie-Karte",
+ "intro": "{name} hat eine Lebensmittelallergie gegen: {list}.",
+ "introSevere": "{name} hat eine schwere Allergie gegen: {list}.",
+ "noName": "Diese Person",
+ "kitchen": "Bitte informieren Sie die Küche.",
+ "avoid": "Bitte nicht verwenden: {foods}.",
+ "tracesStrict": "Auch kleinste Spuren sind gefährlich.",
+ "tracesOk": "Kleine Spuren sind in Ordnung, aber nicht als Zutat.",
+ "cross": "Bitte sauberes Besteck, saubere Pfannen und Bretter verwenden.",
+ "crossMilk": "Nichts in Butter braten, keine Butter auf Brot oder Gemüse, keine Sahne in Saucen, kein gemeinsames Frittieröl.",
+ "unsure": "Wenn Sie unsicher sind, sagen Sie es bitte. Das ist völlig in Ordnung.",
+ "emergency": "Im Notfall bitte {number} anrufen.",
+ "thanks": "Vielen Dank!",
+ "allergens": {
+  "milk": "Kuhmilcheiweiss (Milch)",
+  "lactose": "Laktose (Unverträglichkeit)",
+  "gluten": "Gluten",
+  "eggs": "Eier",
+  "peanuts": "Erdnüsse",
+  "nuts": "Nüsse (Mandeln, Haselnüsse, Walnüsse …)",
+  "soybeans": "Soja",
+  "fish": "Fisch",
+  "crustaceans": "Krebstiere (Garnelen, Krabben …)",
+  "molluscs": "Weichtiere (Muscheln, Tintenfisch …)",
+  "sesame": "Sesam",
+  "celery": "Sellerie",
+  "mustard": "Senf",
+  "lupin": "Lupinen",
+  "sulphites": "Sulfite"
+ },
+ "foods": {
+  "milk": "Milch, Butter, Sahne/Rahm, Käse, Joghurt, Quark, Molke, Kasein, Ghee",
+  "lactose": "Milch, Sahne, Joghurt, Frischkäse, Milchpulver",
+  "gluten": "Weizen, Dinkel, Roggen, Gerste, Paniermehl, Nudeln, Brot",
+  "eggs": "Eier, Mayonnaise, Eiernudeln"
+ }
+}

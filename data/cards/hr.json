@@ -1,0 +1,42 @@
+{
+ "lang": "hr",
+ "name": "Hrvatski",
+ "voice": "hr-HR",
+ "reviewed": false,
+ "title": "Kartica alergija",
+ "intro": "{name} ima alergiju na hranu: {list}.",
+ "introSevere": "{name} ima tešku alergiju na: {list}.",
+ "noName": "Ova osoba",
+ "kitchen": "Molimo obavijestite kuhinju.",
+ "avoid": "Molimo nemojte koristiti: {foods}.",
+ "tracesStrict": "Čak su i najmanji tragovi opasni.",
+ "tracesOk": "Mali tragovi nisu problem, ali ne kao sastojak.",
+ "cross": "Molimo koristite čist pribor za jelo, tave i daske za rezanje.",
+ "crossMilk": "Ništa pečeno na maslacu, bez maslaca na kruhu ili povrću, bez vrhnja u umacima, bez zajedničkog ulja za prženje.",
+ "unsure": "Ako niste sigurni, recite nam. To je sasvim u redu.",
+ "emergency": "U hitnom slučaju nazovite {number}.",
+ "thanks": "Hvala lijepa!",
+ "allergens": {
+  "milk": "bjelančevine kravljeg mlijeka (mliječni proizvodi)",
+  "lactose": "laktoza (intolerancija)",
+  "gluten": "gluten",
+  "eggs": "jaja",
+  "peanuts": "kikiriki",
+  "nuts": "orašasto voće (bademi, lješnjaci, orasi …)",
+  "soybeans": "soja",
+  "fish": "riba",
+  "crustaceans": "rakovi (škampi, kozice …)",
+  "molluscs": "mekušci (dagnje, lignje …)",
+  "sesame": "sezam",
+  "celery": "celer",
+  "mustard": "gorušica",
+  "lupin": "lupina",
+  "sulphites": "sulfiti"
+ },
+ "foods": {
+  "milk": "mlijeko, maslac, vrhnje, sir, jogurt, sirutka, kazein, ghee",
+  "lactose": "mlijeko, vrhnje, jogurt, svježi sir, mlijeko u prahu",
+  "gluten": "pšenica, pira, raž, ječam, krušne mrvice, tjestenina, kruh",
+  "eggs": "jaja, majoneza, tjestenina s jajima"
+ }
+}

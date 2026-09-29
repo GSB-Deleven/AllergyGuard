@@ -1,0 +1,42 @@
+{
+ "lang": "it",
+ "name": "Italiano",
+ "voice": "it-IT",
+ "reviewed": false,
+ "title": "Carta delle allergie",
+ "intro": "{name} ha un'allergia alimentare a: {list}.",
+ "introSevere": "{name} ha un'allergia grave a: {list}.",
+ "noName": "Questa persona",
+ "kitchen": "Per favore, informate la cucina.",
+ "avoid": "Per favore non usate: {foods}.",
+ "tracesStrict": "Anche le tracce più piccole sono pericolose.",
+ "tracesOk": "Piccole tracce vanno bene, ma non come ingrediente.",
+ "cross": "Per favore usate posate, padelle e taglieri puliti.",
+ "crossMilk": "Niente fritto nel burro, niente burro sul pane o sulle verdure, niente panna nelle salse, niente olio di frittura in comune.",
+ "unsure": "Se non siete sicuri, ditecelo pure. Va benissimo.",
+ "emergency": "In caso di emergenza chiamate il {number}.",
+ "thanks": "Grazie mille!",
+ "allergens": {
+  "milk": "proteine del latte vaccino (latticini)",
+  "lactose": "lattosio (intolleranza)",
+  "gluten": "glutine",
+  "eggs": "uova",
+  "peanuts": "arachidi",
+  "nuts": "frutta a guscio (mandorle, nocciole, noci …)",
+  "soybeans": "soia",
+  "fish": "pesce",
+  "crustaceans": "crostacei (gamberi, granchio …)",
+  "molluscs": "molluschi (cozze, calamari …)",
+  "sesame": "sesamo",
+  "celery": "sedano",
+  "mustard": "senape",
+  "lupin": "lupini",
+  "sulphites": "solfiti"
+ },
+ "foods": {
+  "milk": "latte, burro, panna, formaggio, yogurt, siero di latte, caseina, ghee",
+  "lactose": "latte, panna, yogurt, formaggio fresco, latte in polvere",
+  "gluten": "frumento, farro, segale, orzo, pangrattato, pasta, pane",
+  "eggs": "uova, maionese, pasta all'uovo"
+ }
+}

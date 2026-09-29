@@ -1,0 +1,42 @@
+{
+ "lang": "en",
+ "name": "English",
+ "voice": "en-GB",
+ "reviewed": false,
+ "title": "Allergy card",
+ "intro": "{name} has a food allergy to: {list}.",
+ "introSevere": "{name} has a severe allergy to: {list}.",
+ "noName": "This person",
+ "kitchen": "Please inform the kitchen.",
+ "avoid": "Please do not use: {foods}.",
+ "tracesStrict": "Even the smallest traces are dangerous.",
+ "tracesOk": "Small traces are fine, but not as an ingredient.",
+ "cross": "Please use clean cutlery, pans and chopping boards.",
+ "crossMilk": "No frying in butter, no butter on bread or vegetables, no cream in sauces, no shared frying oil.",
+ "unsure": "If you are not sure, please tell us. That is completely fine.",
+ "emergency": "In an emergency, please call {number}.",
+ "thanks": "Thank you very much!",
+ "allergens": {
+  "milk": "cow's milk protein (dairy)",
+  "lactose": "lactose (intolerance)",
+  "gluten": "gluten",
+  "eggs": "eggs",
+  "peanuts": "peanuts",
+  "nuts": "tree nuts (almonds, hazelnuts, walnuts …)",
+  "soybeans": "soya",
+  "fish": "fish",
+  "crustaceans": "crustaceans (prawns, crab …)",
+  "molluscs": "molluscs (mussels, squid …)",
+  "sesame": "sesame",
+  "celery": "celery",
+  "mustard": "mustard",
+  "lupin": "lupin",
+  "sulphites": "sulphites"
+ },
+ "foods": {
+  "milk": "milk, butter, cream, cheese, yoghurt, whey, casein, ghee",
+  "lactose": "milk, cream, yoghurt, cream cheese, milk powder",
+  "gluten": "wheat, spelt, rye, barley, breadcrumbs, pasta, bread",
+  "eggs": "eggs, mayonnaise, egg pasta"
+ }
+}

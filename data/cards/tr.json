@@ -1,0 +1,42 @@
+{
+ "lang": "tr",
+ "name": "Türkçe",
+ "voice": "tr-TR",
+ "reviewed": false,
+ "title": "Alerji kartı",
+ "intro": "{name} için gıda alerjisi: {list}.",
+ "introSevere": "{name} için ciddi gıda alerjisi: {list}.",
+ "noName": "Bu kişi",
+ "kitchen": "Lütfen mutfağı bilgilendirin.",
+ "avoid": "Lütfen şunları kullanmayın: {foods}.",
+ "tracesStrict": "En küçük eser miktarı bile tehlikelidir.",
+ "tracesOk": "Küçük eser miktarı sorun değil, ama malzeme olarak olmasın.",
+ "cross": "Lütfen temiz çatal bıçak, tava ve kesme tahtası kullanın.",
+ "crossMilk": "Tereyağında kızartma yok, ekmekte veya sebzede tereyağı yok, soslarda krema yok, ortak kızartma yağı yok.",
+ "unsure": "Emin değilseniz lütfen söyleyin. Hiç sorun değil.",
+ "emergency": "Acil durumda lütfen {number} arayın.",
+ "thanks": "Çok teşekkürler!",
+ "allergens": {
+  "milk": "inek sütü proteini (süt ürünleri)",
+  "lactose": "laktoz (intolerans)",
+  "gluten": "gluten",
+  "eggs": "yumurta",
+  "peanuts": "yer fıstığı",
+  "nuts": "sert kabuklu yemişler (badem, fındık, ceviz …)",
+  "soybeans": "soya",
+  "fish": "balık",
+  "crustaceans": "kabuklular (karides, yengeç …)",
+  "molluscs": "yumuşakçalar (midye, kalamar …)",
+  "sesame": "susam",
+  "celery": "kereviz",
+  "mustard": "hardal",
+  "lupin": "acı bakla",
+  "sulphites": "sülfitler"
+ },
+ "foods": {
+  "milk": "süt, tereyağı, krema, peynir, yoğurt, peynir altı suyu, kazein, sade yağ",
+  "lactose": "süt, krema, yoğurt, krem peynir, süt tozu",
+  "gluten": "buğday, kavılca, çavdar, arpa, galeta unu, makarna, ekmek",
+  "eggs": "yumurta, mayonez, yumurtalı makarna"
+ }
+}

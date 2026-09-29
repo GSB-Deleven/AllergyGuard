@@ -1,0 +1,42 @@
+{
+ "lang": "es",
+ "name": "Español",
+ "voice": "es-ES",
+ "reviewed": false,
+ "title": "Tarjeta de alergias",
+ "intro": "{name} tiene una alergia alimentaria a: {list}.",
+ "introSevere": "{name} tiene una alergia grave a: {list}.",
+ "noName": "Esta persona",
+ "kitchen": "Por favor, informe a la cocina.",
+ "avoid": "Por favor, no use: {foods}.",
+ "tracesStrict": "Incluso las trazas más pequeñas son peligrosas.",
+ "tracesOk": "Pequeñas trazas no son un problema, pero no como ingrediente.",
+ "cross": "Por favor, use cubiertos, sartenes y tablas limpios.",
+ "crossMilk": "Nada frito en mantequilla, sin mantequilla en el pan ni en las verduras, sin nata en las salsas, sin aceite de freír compartido.",
+ "unsure": "Si no está seguro, díganoslo, por favor. No pasa nada.",
+ "emergency": "En caso de emergencia, llame al {number}.",
+ "thanks": "¡Muchas gracias!",
+ "allergens": {
+  "milk": "proteína de la leche de vaca (lácteos)",
+  "lactose": "lactosa (intolerancia)",
+  "gluten": "gluten",
+  "eggs": "huevo",
+  "peanuts": "cacahuetes",
+  "nuts": "frutos de cáscara (almendras, avellanas, nueces …)",
+  "soybeans": "soja",
+  "fish": "pescado",
+  "crustaceans": "crustáceos (gambas, cangrejo …)",
+  "molluscs": "moluscos (mejillones, calamar …)",
+  "sesame": "sésamo",
+  "celery": "apio",
+  "mustard": "mostaza",
+  "lupin": "altramuces",
+  "sulphites": "sulfitos"
+ },
+ "foods": {
+  "milk": "leche, mantequilla, nata, queso, yogur, suero de leche, caseína, ghee",
+  "lactose": "leche, nata, yogur, queso fresco, leche en polvo",
+  "gluten": "trigo, espelta, centeno, cebada, pan rallado, pasta, pan",
+  "eggs": "huevo, mayonesa, pasta al huevo"
+ }
+}
