@@ -23,7 +23,7 @@ export function buildCard(person, card, { emergency } = {}) {
     fill(severe ? card.introSevere : card.intro, { name, list }),
     card.kitchen,
     foods ? fill(card.avoid, { foods }) : null,
-    strictTraces ? card.tracesStrict : card.tracesOk,
+    severe ? card.tracesSevere : strictTraces ? card.tracesStrict : card.tracesOk,
     card.cross,
     ids.includes("milk") || ids.includes("lactose") ? card.crossMilk : null,
     card.unsure,

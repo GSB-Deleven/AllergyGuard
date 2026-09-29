@@ -1,5 +1,9 @@
 # Änderungsprotokoll
 
+## 0.1.1
+- Allergie-Karte: Bei „Auch Spuren meiden“ heisst es jetzt sachlich „Bitte auch kleinste Spuren vermeiden“. Von „gefährlich“ spricht die Karte nur noch bei „Schwere Reaktion“.
+- Allergen-Auswahl auf dem Handy zweispaltig und besser lesbar (vorher gequetscht)
+
 ## 0.1.0 – Erste Version
 - Einrichtung mit Personen-Profilen und Spuren-Stufe pro Allergen
 - Barcode-Scan mit Open Food Facts, Produkt-Speicher für offline

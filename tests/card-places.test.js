@@ -28,7 +28,8 @@ test("card follows the trace setting and severity", () => {
   const es = load("data/cards/es.json");
   const strict = buildCard({ name: "Lena", allergens: { milk: "avoidTraces" } }, es, { emergency: "112" });
   assert.match(strict.text, /^Lena tiene una alergia alimentaria a: proteína de la leche de vaca/);
-  assert.match(strict.text, /Incluso las trazas/);
+  assert.match(strict.text, /evite también las trazas/);
+  assert.doesNotMatch(strict.text, /peligros/, "avoiding traces is not described as dangerous");
   assert.match(strict.text, /mantequilla/);
   assert.doesNotMatch(strict.text, /112/); // emergency line only for severe
 
@@ -38,6 +39,7 @@ test("card follows the trace setting and severity", () => {
   const severe = buildCard({ name: "", allergens: { milk: "severe" } }, es, { emergency: "112" });
   assert.match(severe.text, /^Esta persona tiene una alergia grave/);
   assert.match(severe.text, /llame al 112/);
+  assert.match(severe.text, /Incluso las trazas más pequeñas son peligrosas/);
 });
 
 test("place from GPS point (offline)", () => {

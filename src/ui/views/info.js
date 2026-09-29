@@ -3,7 +3,7 @@ import { prepareOffline } from "../../services/ocr.js";
 import { icon, toast, LOGO } from "../dom.js";
 import { REPO } from "./result.js";
 
-export const VERSION = "0.1.0";
+export const VERSION = "0.1.1";
 
 export function render(main) {
   const s = store.get();

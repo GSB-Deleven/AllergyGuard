@@ -5,12 +5,12 @@
 Die Allergie-Karte erklärt Personal im Restaurant, Hotel oder an der Theke in der **Landessprache**:
 - wer welche Allergie hat,
 - welche Zutaten nicht verwendet werden dürfen (bei Milch: Milch, Butter, Sahne, Käse, Joghurt, Molke, Kasein, Ghee …),
-- ob **auch Spuren** gefährlich sind (je nach Profil),
+- ob **auch Spuren** vermieden werden sollen (je nach Profil),
 - dass die **Küche informiert** werden soll,
 - wie man **Kreuzkontamination** vermeidet: sauberes Besteck, saubere Pfannen und Bretter, nicht in Butter braten, kein gemeinsames Frittieröl,
 - und dass Nachfragen ausdrücklich erwünscht ist.
 
-Bei „Schwere Reaktion“ steht zusätzlich die **Notrufnummer** des Landes auf der Karte.
+Nur bei der Stufe „Schwere Reaktion“ spricht die Karte von einer schweren Allergie, sagt, dass schon Spuren gefährlich sind, und nennt die **Notrufnummer** des Landes. Bei „Auch Spuren meiden“ bleibt der Ton sachlich: „Bitte auch kleinste Spuren vermeiden.“
 
 ## Ort wählen
 - Oben auf den Ort tippen → Land **und Region** wählen. Die Region zählt, weil sich die Sprache im Land unterscheiden kann:
