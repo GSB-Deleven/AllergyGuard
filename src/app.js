@@ -54,7 +54,8 @@ async function route() {
   const [path, ...params] = hash.replace(/^#\/?/, "").split("?")[0].split("/");
   let name = ROUTES[path] ? path : "start";
 
-  const needsSetup = !store.get().onboarded || !store.get().people.length;
+  // activePerson() only returns profiles the checker understands (see core/profile.js).
+  const needsSetup = !store.get().onboarded || !store.activePerson();
   if (needsSetup && name !== "import") name = "welcome";
 
   try { cleanup?.(); } catch {}
@@ -112,7 +113,26 @@ watchOnline();
 addEventListener("hashchange", route);
 route();
 
+// ----- updates -----
+// A new release takes over in the background (sw.js). The open page still runs the old
+// code, so it shows a notice instead of reloading in the middle of a scan.
+function showUpdateBanner() {
+  const banner = document.querySelector(".update-banner");
+  if (!banner || !banner.hidden) return;
+  banner.hidden = false;
+  banner.querySelector("button").addEventListener("click", () => location.reload());
+}
+
 if ("serviceWorker" in navigator && location.protocol !== "file:") {
-  navigator.serviceWorker.register("sw.js").catch((e) => console.warn("Service Worker", e));
+  const sw = navigator.serviceWorker;
+  const hadController = Boolean(sw.controller); // false on the very first visit: nothing to update
+  sw.addEventListener("controllerchange", () => { if (hadController) showUpdateBanner(); });
+  sw.addEventListener("message", (e) => { if (e.data?.type === "ag-updated" && hadController) showUpdateBanner(); });
+  sw.register("sw.js").then((reg) => {
+    // An installed app can stay open for days: look for a new release whenever it comes back.
+    const check = () => { if (document.visibilityState === "visible") reg.update().catch(() => {}); };
+    document.addEventListener("visibilitychange", check);
+    setInterval(check, 60 * 60 * 1000);
+  }).catch((e) => console.warn("Service Worker", e));
 }
 navigator.storage?.persist?.().catch(() => {});

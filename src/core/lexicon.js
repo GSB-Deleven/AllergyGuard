@@ -15,13 +15,14 @@ const COMPOUND_LANGS = new Set(["de", "als", "lb", "nl", "nl_be", "da", "sv", "n
 export function buildLexicon(generated, manual) {
   const entries = new Map(); // key: `${allergen}|${normTerm}` -> entry
 
-  const put = (allergen, lang, term, meaning, kind) => {
+  const put = (allergen, lang, term, meaning, kind, stem = false) => {
     const n = norm(term);
     if (n.length < 2) return;
     const key = `${allergen}|${n}`;
     const prev = entries.get(key);
     const langs = new Set(prev?.langs || []);
     langs.add(lang);
+    const isStem = stem || prev?.stem === true;
     entries.set(key, {
       allergen,
       term,
@@ -31,7 +32,8 @@ export function buildLexicon(generated, manual) {
       // "maybe" wins over "contains" for the same word: it is the more careful reading
       // for words like "crema" that are often, but not always, dairy.
       kind: prev?.kind === "maybe" || kind === "maybe" ? "maybe" : "contains",
-      mode: matchMode(n, [...langs]),
+      stem: isStem,
+      mode: widest(matchMode(n, [...langs]), isStem ? "prefix" : "word"),
     });
   };
 
@@ -45,6 +47,13 @@ export function buildLexicon(generated, manual) {
   }
   for (const [allergen, langs] of Object.entries(manual.maybe || {})) {
     for (const [lang, words] of Object.entries(langs)) for (const [word, meaning] of Object.entries(words)) put(allergen, lang, word, meaning, "maybe");
+  }
+
+  // Word stems: match at the start of a word, whatever ending follows
+  // ("maslac" -> "maslaca", "maslacem"). For languages that inflect their nouns.
+  for (const [allergen, langs] of Object.entries(manual.stems || {})) {
+    if (allergen.startsWith("_")) continue;
+    for (const [lang, words] of Object.entries(langs)) for (const [word, meaning] of Object.entries(words)) put(allergen, lang, word, meaning, "contains", true);
   }
 
   const exceptions = {};
@@ -62,6 +71,7 @@ export function buildLexicon(generated, manual) {
     byAllergen,
     exceptions,
     traces: (manual.traces?.phrases || []).map(norm).sort((a, b) => b.length - a.length),
+    traceClosers: (manual.traces?.closers || []).map(norm),
     negPrefix: (manual.negations?.prefix || []).map(norm),
     negSuffix: (manual.negations?.suffix || []).map(norm),
     size: entries.size,
@@ -71,7 +81,12 @@ export function buildLexicon(generated, manual) {
 // How strictly a word must stand on its own to count as a match.
 //  - "substring": anywhere (scripts without spaces, long words in compound languages)
 //  - "edge": at the start or end of a word (4-letter words in compound languages)
+//  - "prefix": at the start of a word, any ending (word stems)
 //  - "word": as a whole word, plural -s/-es allowed
+const WIDTH = { word: 0, prefix: 1, edge: 2, substring: 3 };
+// "edge" and "prefix" together: an edge match already covers the word start.
+const widest = (a, b) => (WIDTH[a] >= WIDTH[b] ? a : b);
+
 function matchMode(n, langs) {
   if (NO_SPACE_SCRIPT.test(n)) return "substring";
   const compound = langs.some((l) => COMPOUND_LANGS.has(l));

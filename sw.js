@@ -1,12 +1,18 @@
 // Service worker: keeps AllergyGuard working without internet.
 //
 // - App files (HTML, CSS, JS, word lists): served from the cache immediately and
-//   refreshed in the background, so an update shows up on the next start.
+//   refreshed in the background.
+// - Every release has its own cache (APP_VERSION). A new release is downloaded completely,
+//   takes over at once and tells the open app, which shows "Neue Version verfügbar".
 // - Large libraries in vendor/ (text recognition, language packs): cached on first
 //   use or via "Für unterwegs vorbereiten", then always served from the cache.
 // - Open Food Facts: always live. The app keeps its own copy of checked products.
 
-const VERSION = "ag-v1";
+// Must be the same as "version" in package.json (tests/sw.test.js checks it).
+const APP_VERSION = "0.2.0";
+const VERSION = `ag-${APP_VERSION}`;
+// Releases before 0.2.0 all used this cache name and had no update notice.
+const LEGACY_PREFIX = "ag-v1";
 const SHELL = `${VERSION}-shell`;
 const VENDOR = `${VERSION}-vendor`;
 
@@ -24,6 +30,7 @@ const PRECACHE = [
   "src/core/matcher.js",
   "src/core/normalize.js",
   "src/core/places.js",
+  "src/core/profile.js",
   "src/core/words.js",
   "src/services/ocr.js",
   "src/services/openFoodFacts.js",
@@ -59,15 +66,37 @@ const PRECACHE = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(SHELL).then((c) => c.addAll(PRECACHE)).then(() => self.skipWaiting()));
+  // cache: "reload" skips the browser's HTTP cache, so a new release never mixes old and new files.
+  event.waitUntil(
+    caches.open(SHELL)
+      .then((c) => c.addAll(PRECACHE.map((url) => new Request(url, { cache: "reload" }))))
+      .then(() => self.skipWaiting()),
+  );
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => !k.startsWith(VERSION)).map((k) => caches.delete(k))))
-      .then(() => self.clients.claim()),
-  );
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    const old = keys.filter((k) => k.startsWith("ag-") && !k.startsWith(VERSION));
+    // The downloaded text recognition (about 30 MB) moves to the new cache instead of being loaded again.
+    const oldVendor = old.find((k) => k.endsWith("-vendor"));
+    if (oldVendor) {
+      const [from, to] = await Promise.all([caches.open(oldVendor), caches.open(VENDOR)]);
+      for (const req of await from.keys()) {
+        const res = await from.match(req);
+        if (res) await to.put(req, res);
+      }
+    }
+    await Promise.all(old.map((k) => caches.delete(k)));
+    await self.clients.claim();
+    const windows = await self.clients.matchAll({ type: "window" });
+    const fromLegacy = old.some((k) => k.startsWith(LEGACY_PREFIX));
+    for (const client of windows) {
+      // Open pages of 0.2.0 and later show a notice. Older pages cannot, so they are reloaded once.
+      client.postMessage({ type: "ag-updated", version: APP_VERSION });
+      if (fromLegacy) { try { await client.navigate(client.url); } catch { /* not supported: next start */ } }
+    }
+  })());
 });
 
 self.addEventListener("fetch", (event) => {

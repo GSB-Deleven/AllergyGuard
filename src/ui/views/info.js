@@ -3,7 +3,7 @@ import { prepareOffline } from "../../services/ocr.js";
 import { icon, toast, LOGO } from "../dom.js";
 import { REPO } from "./result.js";
 
-export const VERSION = "0.1.1";
+export const VERSION = "0.2.0";
 
 export function render(main) {
   const s = store.get();
@@ -24,7 +24,9 @@ export function render(main) {
         <li><b>Rot – Enthält:</b> Ein Allergen steht in den Zutaten oder in den Allergen-Angaben.</li>
         <li><b>Gelb – Achtung:</b> „Kann Spuren enthalten“ (je nach Einstellung) oder ein Wort, das oft, aber nicht immer das Allergen enthält, etwa Margarine oder „crema“.</li>
         <li><b>Grün – Nichts gefunden:</b> In den vorhandenen Angaben steht nichts davon. Das ist keine Garantie.</li>
-        <li><b>Grau – Keine Daten:</b> Es gibt keine lesbare Zutatenliste. Die App sagt dann nie „grün“.</li>
+        <li><b>Grau – Bitte vergleichen:</b> Bei einem Foto wurde im erkannten Text nichts gefunden. Die Texterkennung kann Wörter übersehen, darum gibt es nach einem Foto nie Grün.</li>
+        <li><b>Grau – Keine Daten:</b> Es gibt keine lesbare Zutatenliste, der Text ist keine Zutatenliste oder er steht in einer Schrift, die die App nicht sicher prüfen kann (zum Beispiel Chinesisch oder Arabisch). Die App sagt dann nie „grün“.</li>
+        <li><b>Beta:</b> Am gründlichsten geprüft wird Milcheiweiss. Für die anderen Allergene ist die Wortliste noch nicht vollständig.</li>
       </ul>
       <p class="small muted">Gesucht wird immer in allen Sprachen gleichzeitig, mit über 7'000 Begriffen (davon über 4'000 für Milch) aus der offenen Open-Food-Facts-Datenbank und einer von Hand gepflegten Liste.</p>
     </section>

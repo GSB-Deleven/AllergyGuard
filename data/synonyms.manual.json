@@ -36,7 +36,26 @@
     "Laktose": "Laktose",
     "Lactose": "Laktose",
     "Mascarpone": "Frischkäse",
-    "Ricotta": "Molkenkäse"
+    "Ricotta": "Molkenkäse",
+    "Kaese": "Käse",
+    "Bechamel": "Béchamel (mit Milch)",
+    "Béchamel": "Béchamel (mit Milch)",
+    "Lactoferrin": "Lactoferrin (Milcheiweiss)",
+    "Laktoferrin": "Lactoferrin (Milcheiweiss)",
+    "Kolostrum": "Kolostrum (Erstmilch)",
+    "Sbrinz": "Sbrinz (Käse)",
+    "Vacherin": "Vacherin (Käse)",
+    "Gruyère": "Greyerzer (Käse)",
+    "Greyerzer": "Greyerzer (Käse)",
+    "Emmentaler": "Emmentaler (Käse)",
+    "Appenzeller": "Appenzeller (Käse)",
+    "Tilsiter": "Tilsiter (Käse)",
+    "Raclette": "Raclette (Käse)",
+    "Tête de Moine": "Tête de Moine (Käse)",
+    "Schabziger": "Schabziger (Käse)",
+    "Mutschli": "Mutschli (Käse)",
+    "Schmand": "Schmand",
+    "Skyr": "Skyr"
    },
    "en": {
     "milk": "Milch",
@@ -84,7 +103,12 @@
     "lactose": "Laktose",
     "poudre de lait": "Milchpulver",
     "lait écrémé en poudre": "Magermilchpulver",
-    "matière grasse laitière": "Milchfett"
+    "matière grasse laitière": "Milchfett",
+    "Gruyère": "Greyerzer (Käse)",
+    "Vacherin": "Vacherin (Käse)",
+    "Emmental": "Emmentaler (Käse)",
+    "raclette": "Raclette (Käse)",
+    "béchamel": "Béchamel (mit Milch)"
    },
    "it": {
     "latte": "Milch",
@@ -105,7 +129,10 @@
     "ricotta": "Molkenkäse",
     "mascarpone": "Frischkäse",
     "grasso del latte": "Milchfett",
-    "crema di latte": "Sahne"
+    "crema di latte": "Sahne",
+    "burri": "Butter (Mehrzahl)",
+    "gelato": "Speiseeis (meist mit Milch)",
+    "besciamella": "Béchamel (mit Milch)"
    },
    "es": {
     "leche": "Milch",
@@ -130,7 +157,10 @@
     "mantequilla clarificada": "Butterreinfett",
     "cuajada": "Dickmilch/Quark",
     "lácteo": "Milchprodukt",
-    "lácteos": "Milchprodukte"
+    "lácteos": "Milchprodukte",
+    "natilla": "Vanillecreme (mit Milch)",
+    "natillas": "Vanillecreme (mit Milch)",
+    "dulce de leche": "Milchkaramell"
    },
    "ca": {
     "llet": "Milch",
@@ -144,7 +174,9 @@
     "iogurt": "Joghurt",
     "caseïna": "Kasein",
     "lactosa": "Laktose",
-    "làctic": "Milch-"
+    "làctic": "Milch-",
+    "lactis": "Milchprodukte",
+    "làctics": "Milchprodukte"
    },
    "pt": {
     "leite": "Milch",
@@ -181,7 +213,9 @@
     "caseïnaat": "Kaseinat",
     "lactose": "Laktose",
     "karnemelk": "Buttermilch",
-    "melkvet": "Milchfett"
+    "melkvet": "Milchfett",
+    "kazen": "Käse (Mehrzahl)",
+    "zuivel": "Milchprodukte"
    },
    "el": {
     "γάλα": "Milch",
@@ -203,7 +237,14 @@
     "κασέρι": "Kasseri (Käse)",
     "μυζήθρα": "Mizithra (Käse)",
     "βουτύρου": "Butter (Genitiv)",
-    "γαλακτοκομικά": "Milchprodukte"
+    "γαλακτοκομικά": "Milchprodukte",
+    "τυριού": "Käse (Genitiv)",
+    "τυριά": "Käse (Mehrzahl)",
+    "γιαουρτιού": "Joghurt (Genitiv)",
+    "γαλακτοκομικών": "Milchprodukte",
+    "χαλούμι": "Halloumi (Käse)",
+    "μανούρι": "Manouri (Käse)",
+    "ανθότυρο": "Anthotyro (Käse)"
    },
    "tr": {
     "süt": "Milch",
@@ -224,7 +265,16 @@
     "ayran": "Joghurtgetränk",
     "lor": "Molkenkäse",
     "süt ürünleri": "Milchprodukte",
-    "sütlü": "mit Milch"
+    "sütlü": "mit Milch",
+    "sütü": "Milch",
+    "sütün": "Milch",
+    "sütten": "Milch",
+    "sütler": "Milch",
+    "inek sütü": "Kuhmilch",
+    "süt yağı": "Milchfett",
+    "peyniraltı": "Molke",
+    "peyniraltı suyu": "Molke",
+    "krem peynir": "Frischkäse"
    },
    "hr": {
     "mlijeko": "Milch",
@@ -240,7 +290,14 @@
     "laktoza": "Laktose",
     "mliječni": "Milch-",
     "mliječne": "Milch-",
-    "mliječnih": "Milch-"
+    "mliječnih": "Milch-",
+    "sira": "Käse (Genitiv)",
+    "sirom": "Käse",
+    "sirevi": "Käse (Mehrzahl)",
+    "sireva": "Käse (Mehrzahl)",
+    "sirni": "Käse-",
+    "mlijekom": "Milch",
+    "sirutkin prah": "Molkenpulver"
    },
    "sl": {
     "mleko": "Milch",
@@ -265,7 +322,13 @@
     "jogurt": "Joghurt",
     "kazeina": "Kasein",
     "laktoza": "Laktose",
-    "białka mleka": "Milcheiweiss"
+    "białka mleka": "Milcheiweiss",
+    "masła": "Butter (Genitiv)",
+    "masłem": "Butter",
+    "sera": "Käse (Genitiv)",
+    "serem": "Käse",
+    "sery": "Käse (Mehrzahl)",
+    "serów": "Käse (Mehrzahl)"
    },
    "cs": {
     "mléko": "Milch",
@@ -279,7 +342,16 @@
     "jogurt": "Joghurt",
     "kasein": "Kasein",
     "laktóza": "Laktose",
-    "mléčná bílkovina": "Milcheiweiss"
+    "mléčná bílkovina": "Milcheiweiss",
+    "másla": "Butter (Genitiv)",
+    "máslem": "Butter",
+    "sýra": "Käse (Genitiv)",
+    "sýru": "Käse",
+    "sýrem": "Käse",
+    "sýry": "Käse (Mehrzahl)",
+    "sýrů": "Käse (Mehrzahl)",
+    "mlékem": "Milch",
+    "mléce": "Milch"
    },
    "sk": {
     "mlieko": "Milch",
@@ -290,7 +362,11 @@
     "syr": "Käse",
     "tvaroh": "Quark",
     "jogurt": "Joghurt",
-    "laktóza": "Laktose"
+    "laktóza": "Laktose",
+    "masla": "Butter (Genitiv)",
+    "syra": "Käse (Genitiv)",
+    "syry": "Käse (Mehrzahl)",
+    "mliekom": "Milch"
    },
    "hu": {
     "tej": "Milch",
@@ -304,7 +380,13 @@
     "joghurt": "Joghurt",
     "kazein": "Kasein",
     "laktóz": "Laktose",
-    "tejfehérje": "Milcheiweiss"
+    "tejfehérje": "Milcheiweiss",
+    "tejet": "Milch",
+    "tejjel": "Milch",
+    "tejből": "Milch",
+    "vajat": "Butter",
+    "vajjal": "Butter",
+    "sajtot": "Käse"
    },
    "ro": {
     "lapte": "Milch",
@@ -316,7 +398,10 @@
     "brânză": "Käse",
     "iaurt": "Joghurt",
     "cazeină": "Kasein",
-    "lactoză": "Laktose"
+    "lactoză": "Laktose",
+    "untului": "Butter",
+    "untul": "Butter",
+    "zerului": "Molke"
    },
    "sv": {
     "mjölk": "Milch",
@@ -367,13 +452,128 @@
     "jogurtti": "Joghurt",
     "kaseiini": "Kasein",
     "laktoosi": "Laktose",
-    "maitoproteiini": "Milcheiweiss"
+    "maitoproteiini": "Milcheiweiss",
+    "maidon": "Milch (Genitiv)",
+    "voin": "Butter (Genitiv)"
    },
    "mt": {
     "ħalib": "Milch",
     "butir": "Butter",
     "ġobon": "Käse",
     "krema": "Sahne"
+   },
+   "zh": {
+    "牛奶": "Milchprodukt",
+    "奶粉": "Milchprodukt",
+    "乳粉": "Milchprodukt",
+    "全脂乳粉": "Milchprodukt",
+    "脱脂乳粉": "Milchprodukt",
+    "脫脂乳粉": "Milchprodukt",
+    "乳清": "Milchprodukt",
+    "奶油": "Milchprodukt",
+    "黄油": "Milchprodukt",
+    "黃油": "Milchprodukt",
+    "乳酪": "Milchprodukt",
+    "奶酪": "Milchprodukt",
+    "芝士": "Milchprodukt",
+    "干酪": "Milchprodukt",
+    "乳糖": "Milchprodukt",
+    "酪蛋白": "Milchprodukt",
+    "炼乳": "Milchprodukt",
+    "煉乳": "Milchprodukt",
+    "牛乳": "Milchprodukt",
+    "酸奶": "Milchprodukt",
+    "乳制品": "Milchprodukt",
+    "乳製品": "Milchprodukt",
+    "乳固体": "Milchprodukt",
+    "鲜奶": "Milchprodukt",
+    "鮮奶": "Milchprodukt",
+    "全脂奶粉": "Milchprodukt",
+    "脱脂奶粉": "Milchprodukt"
+   },
+   "ja": {
+    "牛乳": "Milchprodukt",
+    "乳製品": "Milchprodukt",
+    "全粉乳": "Milchprodukt",
+    "脱脂粉乳": "Milchprodukt",
+    "粉乳": "Milchprodukt",
+    "バター": "Milchprodukt",
+    "チーズ": "Milchprodukt",
+    "クリーム": "Milchprodukt",
+    "ヨーグルト": "Milchprodukt",
+    "乳糖": "Milchprodukt",
+    "ホエイ": "Milchprodukt",
+    "カゼイン": "Milchprodukt",
+    "乳成分": "Milchprodukt",
+    "練乳": "Milchprodukt",
+    "れん乳": "Milchprodukt",
+    "ミルク": "Milchprodukt",
+    "乳たんぱく": "Milchprodukt",
+    "乳タンパク": "Milchprodukt"
+   },
+   "ko": {
+    "우유": "Milchprodukt",
+    "분유": "Milchprodukt",
+    "전지분유": "Milchprodukt",
+    "탈지분유": "Milchprodukt",
+    "버터": "Milchprodukt",
+    "치즈": "Milchprodukt",
+    "크림": "Milchprodukt",
+    "유청": "Milchprodukt",
+    "유당": "Milchprodukt",
+    "카제인": "Milchprodukt",
+    "요구르트": "Milchprodukt",
+    "연유": "Milchprodukt",
+    "유제품": "Milchprodukt",
+    "유크림": "Milchprodukt",
+    "밀크": "Milchprodukt"
+   },
+   "th": {
+    "นม": "Milchprodukt",
+    "นมผง": "Milchprodukt",
+    "เนย": "Milchprodukt",
+    "ชีส": "Milchprodukt",
+    "ครีม": "Milchprodukt",
+    "เวย์": "Milchprodukt",
+    "โยเกิร์ต": "Milchprodukt",
+    "เคซีน": "Milchprodukt",
+    "แลคโตส": "Milchprodukt"
+   },
+   "hi": {
+    "दूध": "Milchprodukt",
+    "दुग्ध": "Milchprodukt",
+    "मक्खन": "Milchprodukt",
+    "पनीर": "Milchprodukt",
+    "घी": "Milchprodukt",
+    "दही": "Milchprodukt",
+    "मलाई": "Milchprodukt",
+    "क्रीम": "Milchprodukt",
+    "छाछ": "Milchprodukt",
+    "खोया": "Milchprodukt",
+    "मावा": "Milchprodukt"
+   },
+   "ar": {
+    "حليب": "Milchprodukt",
+    "لبن": "Milchprodukt",
+    "زبدة": "Milchprodukt",
+    "جبن": "Milchprodukt",
+    "قشطة": "Milchprodukt",
+    "كريمة": "Milchprodukt",
+    "زبادي": "Milchprodukt",
+    "لاكتوز": "Milchprodukt",
+    "كازين": "Milchprodukt",
+    "مصل اللبن": "Milchprodukt",
+    "ألبان": "Milchprodukt"
+   },
+   "he": {
+    "חלב": "Milchprodukt",
+    "חמאה": "Milchprodukt",
+    "גבינה": "Milchprodukt",
+    "שמנת": "Milchprodukt",
+    "יוגורט": "Milchprodukt",
+    "לקטוז": "Milchprodukt",
+    "קזאין": "Milchprodukt",
+    "מי גבינה": "Milchprodukt"
    }
   }
  },
@@ -384,7 +584,10 @@
     "Milchsäurebakterien": "meist unbedenklich, können aber auf Milch gezüchtet sein",
     "Schokolade": "enthält oft Milch – Zutaten prüfen",
     "Aroma": "kann Milchbestandteile enthalten",
-    "natürliches Aroma": "kann Milchbestandteile enthalten"
+    "natürliches Aroma": "kann Milchbestandteile enthalten",
+    "Nougat": "enthält oft Milch – Zutaten prüfen",
+    "Nugat": "enthält oft Milch – Zutaten prüfen",
+    "Kuvertüre": "enthält oft Milch – Zutaten prüfen"
    },
    "en": {
     "margarine": "kann Milchbestandteile enthalten",
@@ -396,7 +599,9 @@
    "fr": {
     "margarine": "kann Milchbestandteile enthalten",
     "chocolat": "enthält oft Milch – Zutaten prüfen",
-    "arôme naturel": "kann Milchbestandteile enthalten"
+    "arôme naturel": "kann Milchbestandteile enthalten",
+    "glace": "Speiseeis (Schweiz: Glace) – enthält meist Milch",
+    "glaces": "Speiseeis – enthält meist Milch"
    },
    "it": {
     "margarina": "kann Milchbestandteile enthalten",
@@ -624,10 +829,6 @@
     "de": "Milchsäure (E270) – trotz Name keine Milch"
    },
    {
-    "phrase": "crema di nocciole",
-    "de": "Haselnusscreme – Zutaten prüfen"
-   },
-   {
     "phrase": "leche de coco",
     "de": "Kokosmilch (pflanzlich)"
    },
@@ -670,14 +871,6 @@
    {
     "phrase": "ácido láctico",
     "de": "Milchsäure (E270) – trotz Name keine Milch"
-   },
-   {
-    "phrase": "crema de avellanas",
-    "de": "Haselnusscreme – Zutaten prüfen"
-   },
-   {
-    "phrase": "crema de cacao",
-    "de": "Kakaocreme – Zutaten prüfen"
    },
    {
     "phrase": "llet de coco",
@@ -870,11 +1063,47 @@
    {
     "phrase": "custard squash",
     "de": "Kürbis"
+   },
+   {
+    "phrase": "Kokosmilchpulver",
+    "de": "Kokosmilchpulver (pflanzlich)"
+   },
+   {
+    "phrase": "Kokosnussmilchpulver",
+    "de": "Kokosmilchpulver (pflanzlich)"
+   },
+   {
+    "phrase": "Kakaobuttermasse",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "Milchsäurekulturen",
+    "de": "Milchsäurekulturen – meist ohne Milch, im Zweifel nachfragen"
+   },
+   {
+    "phrase": "sucre glace",
+    "de": "Puderzucker"
+   },
+   {
+    "phrase": "butterbeans",
+    "de": "Butterbohnen"
+   },
+   {
+    "phrase": "butter beans",
+    "de": "Butterbohnen"
+   },
+   {
+    "phrase": "buttercup squash",
+    "de": "Kürbis"
+   },
+   {
+    "phrase": "milk thistle",
+    "de": "Mariendistel"
    }
   ]
  },
  "traces": {
-  "_info": "Satzanfänge, die einen Spuren-Hinweis einleiten. Alles bis zum Satzende gilt als 'Spuren'.",
+  "_info": "Satzanfänge, die einen Spuren-Hinweis einleiten. Alles bis zum Satzende gilt als 'Spuren'. 'closers' sind Wörter, mit denen ein solcher Satz endet (z. B. 'kann Spuren von Nüssen enthalten'). Was danach kommt, ist wieder eine normale Zutat.",
   "phrases": [
    "kann spuren",
    "spuren von",
@@ -936,6 +1165,11 @@
    "spor av",
    "voi sisältää",
    "jäämiä"
+  ],
+  "closers": [
+   "enthalten",
+   "möglich",
+   "bevatten"
   ]
  },
  "negations": {
@@ -973,5 +1207,144 @@
    "-mentes",
    "vapaa"
   ]
+ },
+ "stems": {
+  "milk": {
+   "en": {
+    "milkpowder": "Milchpulver",
+    "milkfat": "Milchfett",
+    "milksolid": "Milchtrockenmasse",
+    "milkprotein": "Milcheiweiss",
+    "wheypowder": "Molkenpulver",
+    "wheyprotein": "Molkeneiweiss",
+    "butterfat": "Butterfett",
+    "butteroil": "Butterreinfett",
+    "buttermilk": "Buttermilch",
+    "creamcheese": "Frischkäse",
+    "caseinate": "Kaseinat",
+    "yoghurt": "Joghurt",
+    "yogurt": "Joghurt"
+   },
+   "de_ch": {
+    "Anken": "Butter (Schweizerdeutsch)",
+    "Ziger": "Ziger (Molkenkäse)",
+    "Schotte": "Molke (Schweizerdeutsch)",
+    "Nidel": "Rahm (Schweizerdeutsch)",
+    "Nidle": "Rahm (Schweizerdeutsch)"
+   },
+   "hr": {
+    "maslac": "Butter",
+    "mlijek": "Milch",
+    "mlijec": "Milch-",
+    "mleko": "Milch",
+    "mlecn": "Milch-",
+    "vrhnj": "Sahne",
+    "sirutk": "Molke",
+    "jogurt": "Joghurt",
+    "kajmak": "Rahm",
+    "kazein": "Kasein",
+    "laktoz": "Laktose",
+    "pavlak": "Sahne"
+   },
+   "tr": {
+    "peynir": "Käse",
+    "tereyag": "Butter",
+    "yogurt": "Joghurt",
+    "yogurd": "Joghurt",
+    "kaymak": "Rahm",
+    "kaymag": "Rahm",
+    "sutlu": "mit Milch",
+    "suttozu": "Milchpulver",
+    "kasar": "Kaşar (Käse)",
+    "laktoz": "Laktose",
+    "kazein": "Kasein",
+    "kremal": "mit Sahne"
+   },
+   "el": {
+    "τυρι": "Käse",
+    "τυρο": "Käse-/Molke-",
+    "γιαουρτ": "Joghurt",
+    "γαλακτοκομ": "Milchprodukte",
+    "βουτυρ": "Butter",
+    "λακτοζ": "Laktose",
+    "καζεΐν": "Kasein",
+    "ανθοτυρ": "Anthotyro (Käse)",
+    "μανουρ": "Manouri (Käse)",
+    "χαλουμ": "Halloumi (Käse)",
+    "μυζηθρ": "Mizithra (Käse)"
+   },
+   "pl": {
+    "mlek": "Milch",
+    "mleczn": "Milch-",
+    "serwatk": "Molke",
+    "smietan": "Sahne",
+    "twarog": "Quark",
+    "twaroz": "Quark",
+    "kazein": "Kasein",
+    "maslank": "Buttermilch"
+   },
+   "cs": {
+    "mlecn": "Milch-",
+    "mliec": "Milch-",
+    "syrovatk": "Molke",
+    "srvatk": "Molke",
+    "smetan": "Sahne",
+    "smotan": "Sahne",
+    "tvaroh": "Quark",
+    "podmasl": "Buttermilch"
+   },
+   "hu": {
+    "tejsavo": "Molke",
+    "tejszin": "Sahne",
+    "tejpor": "Milchpulver",
+    "tejfol": "Sauerrahm"
+   },
+   "ro": {
+    "lapte": "Milch",
+    "smantan": "Sahne",
+    "branz": "Käse",
+    "iaurt": "Joghurt",
+    "cazein": "Kasein",
+    "laptel": "Milch"
+   },
+   "ru": {
+    "молок": "Milch",
+    "молоч": "Milch-",
+    "сливк": "Sahne",
+    "сливоч": "Sahne-/Butter-",
+    "сыворот": "Molke",
+    "сметан": "Sauerrahm",
+    "творог": "Quark",
+    "творож": "Quark",
+    "йогурт": "Joghurt",
+    "кефир": "Kefir",
+    "казеин": "Kasein",
+    "лактоз": "Laktose",
+    "мляко": "Milch",
+    "млечн": "Milch-",
+    "сирен": "Käse",
+    "кашкавал": "Käse",
+    "млек": "Milch",
+    "молочн": "Milch-",
+    "вершк": "Sahne",
+    "сметана": "Sauerrahm"
+   },
+   "it": {
+    "lattoprotein": "Milcheiweiss",
+    "sieroprotein": "Molkeneiweiss",
+    "lattiero": "Milch-",
+    "latticin": "Milchprodukte",
+    "besciamell": "Béchamel (mit Milch)"
+   },
+   "fr": {
+    "lactoprotein": "Milcheiweiss",
+    "lactoserum": "Molke"
+   },
+   "pt": {
+    "laticini": "Milchprodukte",
+    "lacticini": "Milchprodukte"
+   }
+  },
+  "_info": "Wortstämme: gelten am Wortanfang mit beliebiger Endung (z. B. 'maslac' findet auch 'maslaca'). Für Sprachen, die Wörter beugen. Nur Stämme eintragen, die nicht auch in harmlosen Wörtern vorkommen (Gegenbeispiel: 'masl' wäre auch 'maslina' = Olive)."
  }
 }

@@ -33,6 +33,7 @@ export const icon = {
     safe: svg('<circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/>', 'stroke-width="2.4"'),
     caution: svg('<path d="M12 3l9.5 17h-19z"/><path d="M12 10v4M12 17.5v.5"/>', 'stroke-width="2.4"'),
     unsafe: svg('<path d="M8 3h8l5 5v8l-5 5H8l-5-5V8z"/><path d="M9 9l6 6M15 9l-6 6"/>', 'stroke-width="2.4"'),
+    review: svg('<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/>', 'stroke-width="2.4"'),
     unknown: svg('<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17v.5"/>', 'stroke-width="2.4"'),
   },
 };
@@ -45,13 +46,15 @@ export function verdictText(verdict, person, allergenLabel) {
   const who = person?.name ? ` für ${person.name}` : "";
   return {
     safe: { title: `Kein${allergenLabel ? "e " + allergenLabel : " Allergen"} gefunden`, sub: `Nach den vorhandenen Angaben geeignet${who}` },
+    // Text from a photo: the text recognition may have missed a word, so never plain green.
+    review: { title: "Im erkannten Text nichts gefunden", sub: "Bitte mit der Verpackung vergleichen. Die Texterkennung kann Wörter übersehen oder falsch lesen." },
     caution: { title: "Achtung, unsicher", sub: `Bitte genau prüfen, bevor ${person?.name || "die Person"} das isst` },
     unsafe: { title: `Enthält ${allergenLabel || "Allergene"}!`, sub: `Nicht geeignet${who}` },
     unknown: { title: "Keine Daten", sub: "Bitte Zutatenliste selbst lesen oder fotografieren" },
   }[verdict];
 }
 
-export const chipText = { safe: "✓ Nichts gefunden", caution: "! Achtung", unsafe: "✕ Enthält", unknown: "? Keine Daten" };
+export const chipText = { safe: "✓ Nichts gefunden", review: "? Bitte vergleichen", caution: "! Achtung", unsafe: "✕ Enthält", unknown: "? Keine Daten" };
 
 export function toast(msg, ms = 2600) {
   document.querySelector(".toast")?.remove();

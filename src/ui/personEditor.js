@@ -8,9 +8,10 @@ export function allergenGridHTML(selected) {
     ${ALLERGENS.map((a) => `
       <button type="button" class="allergen" data-allergen="${a.id}" aria-pressed="${a.id in selected}">
         <span class="check">${a.id in selected ? "✓" : ""}</span>
-        <span>${esc(a.name)}${a.hint ? `<small>${esc(a.hint)}</small>` : ""}</span>
+        <span>${esc(a.name)}${a.beta ? ` <span class="chip beta" title="Wortliste noch unvollständig">Beta</span>` : ""}${a.hint ? `<small>${esc(a.hint)}</small>` : ""}</span>
       </button>`).join("")}
-  </div>`;
+  </div>
+  <p class="small muted">„Beta“: Für diese Allergene ist die Wortliste noch nicht vollständig. Am gründlichsten geprüft wird Milcheiweiss. Bitte die Zutaten zusätzlich selbst lesen.</p>`;
 }
 
 export function bindAllergenGrid(root, selected, onChange) {
