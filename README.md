@@ -63,14 +63,15 @@ AllergyGuard nimmt diese Arbeit ab. Es ist ehrlich, wenn es etwas nicht weiss, u
 </p>
 </details>
 
-## Die vier Ergebnisse
+## Die fünf Ergebnisse
 
 | Anzeige | Bedeutung |
 |---|---|
 | ⛔ **Enthält …!** | Das Allergen steht in den Zutaten oder in den Allergen-Angaben. |
 | ⚠️ **Achtung, unsicher** | „Kann Spuren enthalten“ (je nach deiner Einstellung) oder ein Wort, das *oft* das Allergen enthält, z. B. Margarine. |
 | ✅ **Nichts gefunden** | In den vorhandenen Angaben steht nichts davon. Das ist keine Garantie, und die App sagt es auch so. |
-| ❔ **Keine Daten** | Es gibt keine lesbare Zutatenliste. Die App zeigt dann **nie** Grün. |
+| 🔎 **Im erkannten Text nichts gefunden** | Ergebnis nach einem **Foto**: Die Texterkennung kann Wörter übersehen oder falsch lesen. Darum gibt es nach einem Foto nie Grün, sondern die Bitte, mit der Verpackung zu vergleichen. |
+| ❔ **Keine Daten** | Es gibt keine lesbare Zutatenliste, der Text ist keine Zutatenliste („siehe Verpackung“) oder er steht in einer Schrift, die die App nicht sicher prüfen kann (z. B. Chinesisch, Arabisch, Kyrillisch). Die App zeigt dann **nie** Grün. |
 
 > **Grundregel:** Im Zweifel gilt immer das strengere Ergebnis. „Laktosefrei“ ist zum Beispiel nie eine Entwarnung für Milcheiweiss, denn laktosefreie Milch ist immer noch Milch.
 
@@ -140,7 +141,9 @@ Nein, und das sagt die App auch ehrlich. Produktdaten von Freiwilligen können f
 <details>
 <summary><b>Welche Allergene werden erkannt?</b></summary>
 
-Alle 14 EU-Pflichtallergene: Milch, Gluten, Eier, Erdnüsse, Schalenfrüchte, Soja, Fisch, Krebstiere, Weichtiere, Sesam, Sellerie, Senf, Lupinen und Sulfite. Dazu kommt **Laktose** als eigene Unverträglichkeit. Milcheiweiss ist am gründlichsten gepflegt.
+**Milcheiweiss** ist der Schwerpunkt und am gründlichsten gepflegt und getestet, dazu **Laktose** als eigene Unverträglichkeit.
+
+Die 13 anderen EU-Pflichtallergene (Gluten, Eier, Erdnüsse, Schalenfrüchte, Soja, Fisch, Krebstiere, Weichtiere, Sesam, Sellerie, Senf, Lupinen, Sulfite) lassen sich auswählen, sind aber als **Beta** gekennzeichnet: Die Wortlisten kennen die häufigsten Begriffe (Deutsch, Englisch, Französisch, Italienisch und weitere), sind aber noch nicht vollständig. Bitte dort die Zutaten zusätzlich selbst lesen.
 </details>
 
 <details>

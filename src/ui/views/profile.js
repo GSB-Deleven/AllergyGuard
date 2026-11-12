@@ -120,12 +120,12 @@ export function scanProfileQr() {
         const text = res.getText();
         const hash = text.slice(text.indexOf("#"));
         try {
-          if (!personFromShareHash(hash)) throw new Error();
+          if (!personFromShareHash(hash)) throw new Error("Das ist kein AllergyGuard-Profil.");
           controls?.stop();
           close();
           location.hash = hash;
-        } catch {
-          el.querySelector("#qr-hint").textContent = "Das ist kein AllergyGuard-Profil.";
+        } catch (err) {
+          el.querySelector("#qr-hint").textContent = err?.message || "Das ist kein AllergyGuard-Profil.";
         }
       });
     } catch {
@@ -156,9 +156,10 @@ export function restoreFromFile(onDone) {
 /** #/import/<data> – opened from a shared link or QR code. */
 export function renderImport(main, _params, app) {
   let person;
-  try { person = personFromShareHash(location.hash); } catch { person = null; }
+  let why = "";
+  try { person = personFromShareHash(location.hash); } catch (err) { person = null; why = err.message || ""; }
   if (!person) {
-    main.innerHTML = `<h1>Link ungültig</h1><p class="muted">Dieser Profil-Link ist beschädigt. Bitte neu teilen lassen.</p><a class="btn primary block" href="#/start">Zur App</a>`;
+    main.innerHTML = `<h1>Profil nicht übernommen</h1><p class="muted">${esc(why || "Dieser Profil-Link ist beschädigt.")} Bitte das Profil neu teilen lassen.</p><a class="btn primary block" href="#/start">Zur App</a>`;
     return;
   }
   main.innerHTML = `

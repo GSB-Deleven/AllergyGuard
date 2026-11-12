@@ -33,11 +33,10 @@ export async function render(main, params, app) {
   if (!app.isCurrent(main)) return;
 
   if (!product) return renderLookupError(main, barcode, error);
-  const text = [product.ingredientsText, ...(product.otherTexts || [])].filter(Boolean).join("\n\n");
   renderResult(main, app, {
     title: product.name, subtitle: [product.brand, product.barcode].filter(Boolean).join(" · "), image: product.image,
-    input: { ingredientsText: text, allergenTags: product.allergenTags, traceTags: product.traceTags },
-    mainTextLength: product.ingredientsText.length,
+    // Other language versions are checked too. They can only make the result stricter.
+    input: { ingredientsText: product.ingredientsText, extraTexts: product.otherTexts || [], allergenTags: product.allergenTags, traceTags: product.traceTags },
     source: origin === "cache"
       ? `Gespeicherte Daten von Open Food Facts (Stand ${new Date(product.fetchedAt).toLocaleDateString("de-CH")}) – du bist offline.`
       : "Daten: Open Food Facts, von Freiwilligen gepflegt.",
@@ -56,8 +55,7 @@ export async function renderText(main, _params, app) {
   renderResult(main, app, {
     title: payload.source === "photo" ? "Zutatenliste (Foto)" : "Zutatenliste (Text)",
     subtitle: payload.source === "photo" ? "Texterkennung auf deinem Gerät" : "Von Hand eingegeben",
-    input: { ingredientsText: payload.text, textQuality: payload.quality ?? 1 },
-    mainTextLength: payload.text.length,
+    input: { ingredientsText: payload.text, textQuality: payload.quality ?? 1, source: payload.source === "photo" ? "ocr" : "manual" },
     source: payload.source === "photo" ? "Quelle: Texterkennung auf deinem Handy. Prüfe den erkannten Text, bei unscharfen Fotos können Wörter fehlen." : "Quelle: dein eingegebener Text.",
     back: "#/photo",
   }, lex);
@@ -76,8 +74,15 @@ function renderResult(main, app, r, lex) {
 
   store.addHistory({ barcode: r.barcode || null, name: r.title, verdict: res.verdict, personId: person.id, personName: person.name, source: r.barcode ? "barcode" : "text" });
 
-  const mainText = r.input.ingredientsText.slice(0, r.mainTextLength);
-  const marked = highlight(mainText, res.findings.filter((f) => f.start !== undefined && f.end <= r.mainTextLength));
+  const mainText = r.input.ingredientsText || "";
+  const marked = highlight(mainText, res.findings.filter((f) => f.start !== undefined));
+  const beta = ids.filter((id) => byId[id]?.beta).map((id) => byId[id].name);
+  const noData = {
+    notList: ["Das sieht nicht nach einer Zutatenliste aus", "Der Text ist zu kurz oder enthält keine Aufzählung von Zutaten. Ohne lesbare Zutatenliste sagt die App nie „nichts gefunden“. Fotografiere die Zutatenliste oder tippe sie ab."],
+    script: ["Diese Schrift kann die App nicht zuverlässig prüfen", "Der Text ist in einer Schrift (zum Beispiel Chinesisch, Arabisch oder Kyrillisch), für die die Wortliste nicht ausreicht. Findet die App ein Wort, warnt sie. Findet sie nichts, heisst das hier nichts. Bitte nachfragen oder die Allergie-Karte zeigen."],
+    quality: ["Der Text ist schlecht lesbar", "Die Texterkennung war unsicher. Bitte ein schärferes Foto machen oder den Text von Hand korrigieren."],
+    empty: ["Keine Zutatenliste gefunden", "Das Produkt ist bekannt, aber ohne lesbare Zutaten. Fotografiere die Zutatenliste, dann prüft die App den Text."],
+  }[res.why] || null;
 
   main.innerHTML = `
     <div class="spread"><h1 class="small muted" style="font-size:15px">Ergebnis für ${esc(person.name || "dich")}</h1><a class="btn small" href="${r.back || "#/scan"}" aria-label="Zurück">${icon.back}</a></div>
@@ -91,15 +96,17 @@ function renderResult(main, app, r, lex) {
     </section>
 
     ${findings.length ? `<section class="card stack"><h2>Warum?</h2><div class="findings">
-      ${findings.map((f) => `<div class="finding"><span class="dot ${f.verdict}" aria-hidden="true">${{ unsafe: "✕", caution: "!", safe: "i", unknown: "?" }[f.verdict]}</span>
+      ${findings.map((f) => `<div class="finding"><span class="dot ${f.verdict}" aria-hidden="true">${{ unsafe: "✕", caution: "!", safe: "i", review: "i", unknown: "?" }[f.verdict]}</span>
         <span>${ids.length > 1 ? `<b>${esc(byId[f.allergen]?.short || f.allergen)}:</b> ` : ""}${esc(f.reason)}</span></div>`).join("")}
     </div></section>` : ""}
 
-    ${res.verdict === "unknown" ? `<div class="card flat stack"><b>Keine Zutatenliste gefunden</b>
-      <p class="small">Das Produkt ist bekannt, aber ohne lesbare Zutaten. Fotografiere die Zutatenliste, dann prüft die App den Text.</p>
+    ${beta.length && res.verdict !== "unsafe" ? `<p class="small muted"><span class="chip beta">Beta</span> Für ${esc(beta.join(", "))} ist die Wortliste noch nicht vollständig. Bitte die Zutaten zusätzlich selbst lesen.</p>` : ""}
+
+    ${res.verdict === "unknown" ? `<div class="card flat stack"><b>${esc((noData || ["Keine Daten"])[0])}</b>
+      <p class="small">${esc((noData || ["", "Bitte die Zutatenliste selbst lesen oder fotografieren."])[1])}</p>
       <a class="btn primary block" href="#/photo">${icon.photo} Zutatenliste fotografieren</a></div>` : ""}
 
-    ${mainText ? `<details class="card" ${res.verdict === "safe" ? "" : "open"}><summary>Zutaten ${res.readable ? "" : "(nicht lesbar)"}</summary><p class="ingredients">${marked}</p></details>` : ""}
+    ${mainText ? `<details class="card" ${res.verdict === "safe" ? "" : "open"}><summary>Zutaten ${res.readable ? "" : "(nicht prüfbar)"}</summary><p class="ingredients">${marked}</p></details>` : ""}
 
     <p class="source">${esc(r.source)} ${r.offLink ? `<a href="${r.offLink}" target="_blank" rel="noopener">Produkt bei Open Food Facts ansehen oder ergänzen</a>` : ""}</p>
     <p class="disclaimer">AllergyGuard ist eine Hilfe, keine Garantie. Im Zweifel die Verpackung lesen und nachfragen.</p>

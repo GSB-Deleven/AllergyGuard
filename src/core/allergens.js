@@ -19,6 +19,11 @@ export const ALLERGENS = [
   { id: "sulphites", name: "Sulfite", short: "Sulfite", hint: "Schwefeldioxid, E220–E228", off: "en:sulphur-dioxide-and-sulphites" },
 ];
 
+// Milk protein is the hand-checked focus of the app. The word lists of the other
+// allergens are less complete, so the app marks them as "Beta" and never over-promises.
+const MATURE = new Set(["milk", "lactose"]);
+for (const a of ALLERGENS) a.beta = !MATURE.has(a.id);
+
 export const byId = Object.fromEntries(ALLERGENS.map((a) => [a.id, a]));
 
 // How strictly a person reacts. Stored per allergen in the profile.

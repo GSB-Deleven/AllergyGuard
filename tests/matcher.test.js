@@ -141,7 +141,7 @@ test("common false friends do not trigger", () => {
     "Butternut squash, water",
     "Edamame, sal",                     // edamame is not Edam cheese
     "Savoy cabbage, carrots",           // savoy contains Hungarian "savó" (whey)
-    "Jamón cocido de calidad superior", // Frisian "sûpe" is not in the list
+    "Jamón cocido de calidad superior, sal", // Frisian "sûpe" is not in the list
   ]) {
     assert.equal(verdictOf(text), "safe", text);
   }

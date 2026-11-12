@@ -61,7 +61,7 @@ So läuft jede Änderung, egal ob Claude oder jemand anderes sie macht:
 1. Die Änderung wird auf einem eigenen **Branch** gemacht (eine Arbeitskopie).
 2. Daraus entsteht ein **Pull Request (PR)**, ein Änderungsvorschlag. GitHub testet ihn automatisch.
 3. Du schaust ihn dir an. Bei grünem Haken klickst du auf **Merge pull request**.
-4. Nach 1–2 Minuten ist die neue Version online. Die App am iPhone aktualisiert sich beim nächsten Öffnen von selbst (eventuell zweimal öffnen).
+4. Nach 1–2 Minuten ist die neue Version online. Die App am iPhone lädt die neue Version beim nächsten Öffnen und zeigt dann „Neue Version verfügbar“ mit dem Knopf „Neu laden“. Wichtig: Bei jeder Veröffentlichung die Versionsnummer an drei Stellen erhöhen (`package.json`, `APP_VERSION` in `sw.js`, `VERSION` in `src/ui/views/info.js`). Ein Test prüft, dass sie gleich sind.
 
 **Etwas ist kaputt?** Im gemergten PR auf **Revert** klicken → neuer PR → Merge. Damit ist die alte Version zurück.
 

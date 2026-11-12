@@ -1,5 +1,5 @@
 {
- "_info": "Von Hand gepflegte Ergänzungen zur automatisch erzeugten Liste (synonyms.generated.json). Jeder Eintrag ist ein Wort, wie es auf Verpackungen steht, mit deutscher Bedeutung. Änderungen bitte immer mit Test in tests/matcher.test.js.",
+ "_info": "Von Hand gepflegte Ergänzungen zur automatisch erzeugten Liste (synonyms.generated.json). Jeder Eintrag ist ein Wort, wie es auf Verpackungen steht, mit deutscher Bedeutung. Änderungen bitte immer mit Test in tests/.",
  "_sources": [
   "EU-Verordnung 1169/2011, Anhang II (Pflichtallergene) in den Amtssprachen",
   "Open-Food-Facts-Taxonomie (ODbL)",
@@ -36,7 +36,26 @@
     "Laktose": "Laktose",
     "Lactose": "Laktose",
     "Mascarpone": "Frischkäse",
-    "Ricotta": "Molkenkäse"
+    "Ricotta": "Molkenkäse",
+    "Kaese": "Käse",
+    "Bechamel": "Béchamel (mit Milch)",
+    "Béchamel": "Béchamel (mit Milch)",
+    "Lactoferrin": "Lactoferrin (Milcheiweiss)",
+    "Laktoferrin": "Lactoferrin (Milcheiweiss)",
+    "Kolostrum": "Kolostrum (Erstmilch)",
+    "Sbrinz": "Sbrinz (Käse)",
+    "Vacherin": "Vacherin (Käse)",
+    "Gruyère": "Greyerzer (Käse)",
+    "Greyerzer": "Greyerzer (Käse)",
+    "Emmentaler": "Emmentaler (Käse)",
+    "Appenzeller": "Appenzeller (Käse)",
+    "Tilsiter": "Tilsiter (Käse)",
+    "Raclette": "Raclette (Käse)",
+    "Tête de Moine": "Tête de Moine (Käse)",
+    "Schabziger": "Schabziger (Käse)",
+    "Mutschli": "Mutschli (Käse)",
+    "Schmand": "Schmand",
+    "Skyr": "Skyr"
    },
    "en": {
     "milk": "Milch",
@@ -84,7 +103,12 @@
     "lactose": "Laktose",
     "poudre de lait": "Milchpulver",
     "lait écrémé en poudre": "Magermilchpulver",
-    "matière grasse laitière": "Milchfett"
+    "matière grasse laitière": "Milchfett",
+    "Gruyère": "Greyerzer (Käse)",
+    "Vacherin": "Vacherin (Käse)",
+    "Emmental": "Emmentaler (Käse)",
+    "raclette": "Raclette (Käse)",
+    "béchamel": "Béchamel (mit Milch)"
    },
    "it": {
     "latte": "Milch",
@@ -105,7 +129,10 @@
     "ricotta": "Molkenkäse",
     "mascarpone": "Frischkäse",
     "grasso del latte": "Milchfett",
-    "crema di latte": "Sahne"
+    "crema di latte": "Sahne",
+    "burri": "Butter (Mehrzahl)",
+    "gelato": "Speiseeis (meist mit Milch)",
+    "besciamella": "Béchamel (mit Milch)"
    },
    "es": {
     "leche": "Milch",
@@ -130,7 +157,10 @@
     "mantequilla clarificada": "Butterreinfett",
     "cuajada": "Dickmilch/Quark",
     "lácteo": "Milchprodukt",
-    "lácteos": "Milchprodukte"
+    "lácteos": "Milchprodukte",
+    "natilla": "Vanillecreme (mit Milch)",
+    "natillas": "Vanillecreme (mit Milch)",
+    "dulce de leche": "Milchkaramell"
    },
    "ca": {
     "llet": "Milch",
@@ -144,7 +174,9 @@
     "iogurt": "Joghurt",
     "caseïna": "Kasein",
     "lactosa": "Laktose",
-    "làctic": "Milch-"
+    "làctic": "Milch-",
+    "lactis": "Milchprodukte",
+    "làctics": "Milchprodukte"
    },
    "pt": {
     "leite": "Milch",
@@ -181,7 +213,9 @@
     "caseïnaat": "Kaseinat",
     "lactose": "Laktose",
     "karnemelk": "Buttermilch",
-    "melkvet": "Milchfett"
+    "melkvet": "Milchfett",
+    "kazen": "Käse (Mehrzahl)",
+    "zuivel": "Milchprodukte"
    },
    "el": {
     "γάλα": "Milch",
@@ -203,7 +237,14 @@
     "κασέρι": "Kasseri (Käse)",
     "μυζήθρα": "Mizithra (Käse)",
     "βουτύρου": "Butter (Genitiv)",
-    "γαλακτοκομικά": "Milchprodukte"
+    "γαλακτοκομικά": "Milchprodukte",
+    "τυριού": "Käse (Genitiv)",
+    "τυριά": "Käse (Mehrzahl)",
+    "γιαουρτιού": "Joghurt (Genitiv)",
+    "γαλακτοκομικών": "Milchprodukte",
+    "χαλούμι": "Halloumi (Käse)",
+    "μανούρι": "Manouri (Käse)",
+    "ανθότυρο": "Anthotyro (Käse)"
    },
    "tr": {
     "süt": "Milch",
@@ -224,7 +265,16 @@
     "ayran": "Joghurtgetränk",
     "lor": "Molkenkäse",
     "süt ürünleri": "Milchprodukte",
-    "sütlü": "mit Milch"
+    "sütlü": "mit Milch",
+    "sütü": "Milch",
+    "sütün": "Milch",
+    "sütten": "Milch",
+    "sütler": "Milch",
+    "inek sütü": "Kuhmilch",
+    "süt yağı": "Milchfett",
+    "peyniraltı": "Molke",
+    "peyniraltı suyu": "Molke",
+    "krem peynir": "Frischkäse"
    },
    "hr": {
     "mlijeko": "Milch",
@@ -240,7 +290,14 @@
     "laktoza": "Laktose",
     "mliječni": "Milch-",
     "mliječne": "Milch-",
-    "mliječnih": "Milch-"
+    "mliječnih": "Milch-",
+    "sira": "Käse (Genitiv)",
+    "sirom": "Käse",
+    "sirevi": "Käse (Mehrzahl)",
+    "sireva": "Käse (Mehrzahl)",
+    "sirni": "Käse-",
+    "mlijekom": "Milch",
+    "sirutkin prah": "Molkenpulver"
    },
    "sl": {
     "mleko": "Milch",
@@ -265,7 +322,13 @@
     "jogurt": "Joghurt",
     "kazeina": "Kasein",
     "laktoza": "Laktose",
-    "białka mleka": "Milcheiweiss"
+    "białka mleka": "Milcheiweiss",
+    "masła": "Butter (Genitiv)",
+    "masłem": "Butter",
+    "sera": "Käse (Genitiv)",
+    "serem": "Käse",
+    "sery": "Käse (Mehrzahl)",
+    "serów": "Käse (Mehrzahl)"
    },
    "cs": {
     "mléko": "Milch",
@@ -279,7 +342,16 @@
     "jogurt": "Joghurt",
     "kasein": "Kasein",
     "laktóza": "Laktose",
-    "mléčná bílkovina": "Milcheiweiss"
+    "mléčná bílkovina": "Milcheiweiss",
+    "másla": "Butter (Genitiv)",
+    "máslem": "Butter",
+    "sýra": "Käse (Genitiv)",
+    "sýru": "Käse",
+    "sýrem": "Käse",
+    "sýry": "Käse (Mehrzahl)",
+    "sýrů": "Käse (Mehrzahl)",
+    "mlékem": "Milch",
+    "mléce": "Milch"
    },
    "sk": {
     "mlieko": "Milch",
@@ -290,7 +362,11 @@
     "syr": "Käse",
     "tvaroh": "Quark",
     "jogurt": "Joghurt",
-    "laktóza": "Laktose"
+    "laktóza": "Laktose",
+    "masla": "Butter (Genitiv)",
+    "syra": "Käse (Genitiv)",
+    "syry": "Käse (Mehrzahl)",
+    "mliekom": "Milch"
    },
    "hu": {
     "tej": "Milch",
@@ -304,7 +380,13 @@
     "joghurt": "Joghurt",
     "kazein": "Kasein",
     "laktóz": "Laktose",
-    "tejfehérje": "Milcheiweiss"
+    "tejfehérje": "Milcheiweiss",
+    "tejet": "Milch",
+    "tejjel": "Milch",
+    "tejből": "Milch",
+    "vajat": "Butter",
+    "vajjal": "Butter",
+    "sajtot": "Käse"
    },
    "ro": {
     "lapte": "Milch",
@@ -316,7 +398,10 @@
     "brânză": "Käse",
     "iaurt": "Joghurt",
     "cazeină": "Kasein",
-    "lactoză": "Laktose"
+    "lactoză": "Laktose",
+    "untului": "Butter",
+    "untul": "Butter",
+    "zerului": "Molke"
    },
    "sv": {
     "mjölk": "Milch",
@@ -367,13 +452,828 @@
     "jogurtti": "Joghurt",
     "kaseiini": "Kasein",
     "laktoosi": "Laktose",
-    "maitoproteiini": "Milcheiweiss"
+    "maitoproteiini": "Milcheiweiss",
+    "maidon": "Milch (Genitiv)",
+    "voin": "Butter (Genitiv)"
    },
    "mt": {
     "ħalib": "Milch",
     "butir": "Butter",
     "ġobon": "Käse",
     "krema": "Sahne"
+   },
+   "zh": {
+    "牛奶": "Milchprodukt",
+    "奶粉": "Milchprodukt",
+    "乳粉": "Milchprodukt",
+    "全脂乳粉": "Milchprodukt",
+    "脱脂乳粉": "Milchprodukt",
+    "脫脂乳粉": "Milchprodukt",
+    "乳清": "Milchprodukt",
+    "奶油": "Milchprodukt",
+    "黄油": "Milchprodukt",
+    "黃油": "Milchprodukt",
+    "乳酪": "Milchprodukt",
+    "奶酪": "Milchprodukt",
+    "芝士": "Milchprodukt",
+    "干酪": "Milchprodukt",
+    "乳糖": "Milchprodukt",
+    "酪蛋白": "Milchprodukt",
+    "炼乳": "Milchprodukt",
+    "煉乳": "Milchprodukt",
+    "牛乳": "Milchprodukt",
+    "酸奶": "Milchprodukt",
+    "乳制品": "Milchprodukt",
+    "乳製品": "Milchprodukt",
+    "乳固体": "Milchprodukt",
+    "鲜奶": "Milchprodukt",
+    "鮮奶": "Milchprodukt",
+    "全脂奶粉": "Milchprodukt",
+    "脱脂奶粉": "Milchprodukt"
+   },
+   "ja": {
+    "牛乳": "Milchprodukt",
+    "乳製品": "Milchprodukt",
+    "全粉乳": "Milchprodukt",
+    "脱脂粉乳": "Milchprodukt",
+    "粉乳": "Milchprodukt",
+    "バター": "Milchprodukt",
+    "チーズ": "Milchprodukt",
+    "クリーム": "Milchprodukt",
+    "ヨーグルト": "Milchprodukt",
+    "乳糖": "Milchprodukt",
+    "ホエイ": "Milchprodukt",
+    "カゼイン": "Milchprodukt",
+    "乳成分": "Milchprodukt",
+    "練乳": "Milchprodukt",
+    "れん乳": "Milchprodukt",
+    "ミルク": "Milchprodukt",
+    "乳たんぱく": "Milchprodukt",
+    "乳タンパク": "Milchprodukt"
+   },
+   "ko": {
+    "우유": "Milchprodukt",
+    "분유": "Milchprodukt",
+    "전지분유": "Milchprodukt",
+    "탈지분유": "Milchprodukt",
+    "버터": "Milchprodukt",
+    "치즈": "Milchprodukt",
+    "크림": "Milchprodukt",
+    "유청": "Milchprodukt",
+    "유당": "Milchprodukt",
+    "카제인": "Milchprodukt",
+    "요구르트": "Milchprodukt",
+    "연유": "Milchprodukt",
+    "유제품": "Milchprodukt",
+    "유크림": "Milchprodukt",
+    "밀크": "Milchprodukt"
+   },
+   "th": {
+    "นม": "Milchprodukt",
+    "นมผง": "Milchprodukt",
+    "เนย": "Milchprodukt",
+    "ชีส": "Milchprodukt",
+    "ครีม": "Milchprodukt",
+    "เวย์": "Milchprodukt",
+    "โยเกิร์ต": "Milchprodukt",
+    "เคซีน": "Milchprodukt",
+    "แลคโตส": "Milchprodukt"
+   },
+   "hi": {
+    "दूध": "Milchprodukt",
+    "दुग्ध": "Milchprodukt",
+    "मक्खन": "Milchprodukt",
+    "पनीर": "Milchprodukt",
+    "घी": "Milchprodukt",
+    "दही": "Milchprodukt",
+    "मलाई": "Milchprodukt",
+    "क्रीम": "Milchprodukt",
+    "छाछ": "Milchprodukt",
+    "खोया": "Milchprodukt",
+    "मावा": "Milchprodukt"
+   },
+   "ar": {
+    "حليب": "Milchprodukt",
+    "لبن": "Milchprodukt",
+    "زبدة": "Milchprodukt",
+    "جبن": "Milchprodukt",
+    "قشطة": "Milchprodukt",
+    "كريمة": "Milchprodukt",
+    "زبادي": "Milchprodukt",
+    "لاكتوز": "Milchprodukt",
+    "كازين": "Milchprodukt",
+    "مصل اللبن": "Milchprodukt",
+    "ألبان": "Milchprodukt"
+   },
+   "he": {
+    "חלב": "Milchprodukt",
+    "חמאה": "Milchprodukt",
+    "גבינה": "Milchprodukt",
+    "שמנת": "Milchprodukt",
+    "יוגורט": "Milchprodukt",
+    "לקטוז": "Milchprodukt",
+    "קזאין": "Milchprodukt",
+    "מי גבינה": "Milchprodukt"
+   }
+  },
+  "eggs": {
+   "de": {
+    "Ei": "Ei",
+    "Eier": "Ei",
+    "Eiern": "Ei",
+    "Eigelb": "Ei",
+    "Eiklar": "Ei",
+    "Eipulver": "Ei",
+    "Vollei": "Ei",
+    "Volleipulver": "Ei",
+    "Hühnerei": "Ei",
+    "Trockenei": "Ei",
+    "Flüssigei": "Ei",
+    "Lysozym": "Ei",
+    "Ovalbumin": "Ei",
+    "Mayonnaise": "Ei",
+    "Eierteigwaren": "Ei"
+   },
+   "en": {
+    "egg": "Ei",
+    "eggs": "Ei",
+    "egg white": "Ei",
+    "egg yolk": "Ei",
+    "albumen": "Ei",
+    "lysozyme": "Ei",
+    "ovalbumin": "Ei",
+    "mayonnaise": "Ei",
+    "meringue": "Ei",
+    "E1105": "Ei",
+    "E 1105": "Ei"
+   },
+   "fr": {
+    "œuf": "Ei",
+    "œufs": "Ei",
+    "oeuf": "Ei",
+    "oeufs": "Ei",
+    "jaune d'œuf": "Ei",
+    "blanc d'œuf": "Ei",
+    "lysozyme": "Ei",
+    "ovalbumine": "Ei",
+    "mayonnaise": "Ei",
+    "meringue": "Ei"
+   },
+   "it": {
+    "uovo": "Ei",
+    "uova": "Ei",
+    "tuorlo": "Ei",
+    "albume": "Ei",
+    "maionese": "Ei",
+    "lisozima": "Ei"
+   },
+   "tr": {
+    "yumurta": "Ei"
+   },
+   "nl": {
+    "ei": "Ei",
+    "eieren": "Ei",
+    "eigeel": "Ei"
+   }
+  },
+  "gluten": {
+   "de": {
+    "Weizen": "glutenhaltiges Getreide",
+    "Dinkel": "glutenhaltiges Getreide",
+    "Roggen": "glutenhaltiges Getreide",
+    "Gerste": "glutenhaltiges Getreide",
+    "Hafer": "glutenhaltiges Getreide",
+    "Griess": "glutenhaltiges Getreide",
+    "Grieß": "glutenhaltiges Getreide",
+    "Couscous": "glutenhaltiges Getreide",
+    "Kuskus": "glutenhaltiges Getreide",
+    "Bulgur": "glutenhaltiges Getreide",
+    "Seitan": "glutenhaltiges Getreide",
+    "Emmer": "glutenhaltiges Getreide",
+    "Einkorn": "glutenhaltiges Getreide",
+    "Kamut": "glutenhaltiges Getreide",
+    "Grünkern": "glutenhaltiges Getreide",
+    "Triticale": "glutenhaltiges Getreide",
+    "Malz": "glutenhaltiges Getreide",
+    "Paniermehl": "glutenhaltiges Getreide",
+    "Semmelbrösel": "glutenhaltiges Getreide",
+    "Weizenstärke": "glutenhaltiges Getreide",
+    "Weizeneiweiss": "glutenhaltiges Getreide",
+    "Hartweizen": "glutenhaltiges Getreide"
+   },
+   "en": {
+    "wheat": "glutenhaltiges Getreide",
+    "rye": "glutenhaltiges Getreide",
+    "barley": "glutenhaltiges Getreide",
+    "oats": "glutenhaltiges Getreide",
+    "spelt": "glutenhaltiges Getreide",
+    "semolina": "glutenhaltiges Getreide",
+    "couscous": "glutenhaltiges Getreide",
+    "bulgur": "glutenhaltiges Getreide",
+    "seitan": "glutenhaltiges Getreide",
+    "malt": "glutenhaltiges Getreide",
+    "farro": "glutenhaltiges Getreide",
+    "durum": "glutenhaltiges Getreide",
+    "triticale": "glutenhaltiges Getreide",
+    "breadcrumbs": "glutenhaltiges Getreide",
+    "kamut": "glutenhaltiges Getreide"
+   },
+   "fr": {
+    "blé": "glutenhaltiges Getreide",
+    "froment": "glutenhaltiges Getreide",
+    "seigle": "glutenhaltiges Getreide",
+    "orge": "glutenhaltiges Getreide",
+    "avoine": "glutenhaltiges Getreide",
+    "épeautre": "glutenhaltiges Getreide",
+    "semoule": "glutenhaltiges Getreide",
+    "seitan": "glutenhaltiges Getreide",
+    "malt": "glutenhaltiges Getreide",
+    "couscous": "glutenhaltiges Getreide",
+    "boulgour": "glutenhaltiges Getreide",
+    "chapelure": "glutenhaltiges Getreide"
+   },
+   "it": {
+    "frumento": "glutenhaltiges Getreide",
+    "grano": "glutenhaltiges Getreide",
+    "segale": "glutenhaltiges Getreide",
+    "orzo": "glutenhaltiges Getreide",
+    "avena": "glutenhaltiges Getreide",
+    "farro": "glutenhaltiges Getreide",
+    "semola": "glutenhaltiges Getreide",
+    "semolino": "glutenhaltiges Getreide",
+    "seitan": "glutenhaltiges Getreide",
+    "malto": "glutenhaltiges Getreide",
+    "pangrattato": "glutenhaltiges Getreide",
+    "cuscus": "glutenhaltiges Getreide"
+   },
+   "es": {
+    "avena": "glutenhaltiges Getreide",
+    "sémola": "glutenhaltiges Getreide",
+    "pan rallado": "glutenhaltiges Getreide",
+    "trigo": "glutenhaltiges Getreide",
+    "cebada": "glutenhaltiges Getreide",
+    "centeno": "glutenhaltiges Getreide",
+    "espelta": "glutenhaltiges Getreide"
+   },
+   "tr": {
+    "buğday": "glutenhaltiges Getreide",
+    "çavdar": "glutenhaltiges Getreide",
+    "arpa": "glutenhaltiges Getreide",
+    "yulaf": "glutenhaltiges Getreide"
+   },
+   "el": {
+    "σίτου": "glutenhaltiges Getreide",
+    "σιτάρι": "glutenhaltiges Getreide",
+    "κριθάρι": "glutenhaltiges Getreide"
+   }
+  },
+  "nuts": {
+   "de": {
+    "Marzipan": "Schalenfrucht",
+    "Nougat": "Schalenfrucht",
+    "Nugat": "Schalenfrucht",
+    "Baumnuss": "Schalenfrucht",
+    "Baumnüsse": "Schalenfrucht",
+    "Haselnuss": "Schalenfrucht",
+    "Mandel": "Schalenfrucht",
+    "Walnuss": "Schalenfrucht",
+    "Cashew": "Schalenfrucht",
+    "Pistazie": "Schalenfrucht",
+    "Pekannuss": "Schalenfrucht",
+    "Paranuss": "Schalenfrucht",
+    "Macadamia": "Schalenfrucht",
+    "Gianduja": "Schalenfrucht"
+   },
+   "en": {
+    "marzipan": "Schalenfrucht",
+    "nougat": "Schalenfrucht",
+    "praline": "Schalenfrucht",
+    "gianduja": "Schalenfrucht",
+    "hazelnut": "Schalenfrucht",
+    "almond": "Schalenfrucht",
+    "walnut": "Schalenfrucht",
+    "cashew": "Schalenfrucht",
+    "pistachio": "Schalenfrucht",
+    "pecan": "Schalenfrucht",
+    "macadamia": "Schalenfrucht",
+    "brazil nut": "Schalenfrucht"
+   },
+   "fr": {
+    "massepain": "Schalenfrucht",
+    "pâte d'amande": "Schalenfrucht",
+    "praliné": "Schalenfrucht",
+    "nougat": "Schalenfrucht",
+    "noisette": "Schalenfrucht",
+    "amande": "Schalenfrucht",
+    "noix": "Schalenfrucht",
+    "pistache": "Schalenfrucht"
+   },
+   "it": {
+    "marzapane": "Schalenfrucht",
+    "gianduia": "Schalenfrucht",
+    "torrone": "Schalenfrucht",
+    "nocciola": "Schalenfrucht",
+    "nocciole": "Schalenfrucht",
+    "mandorla": "Schalenfrucht",
+    "mandorle": "Schalenfrucht",
+    "noci": "Schalenfrucht",
+    "pistacchio": "Schalenfrucht"
+   },
+   "pt": {
+    "amêndoa": "Schalenfrucht",
+    "avelã": "Schalenfrucht",
+    "noz": "Schalenfrucht",
+    "nozes": "Schalenfrucht"
+   },
+   "tr": {
+    "fındık": "Schalenfrucht",
+    "ceviz": "Schalenfrucht",
+    "badem": "Schalenfrucht"
+   }
+  },
+  "peanuts": {
+   "de": {
+    "Erdnuss": "Erdnuss",
+    "Erdnüsse": "Erdnuss",
+    "Erdnussöl": "Erdnuss",
+    "Erdnussbutter": "Erdnuss",
+    "Erdnussmus": "Erdnuss"
+   },
+   "en": {
+    "peanut": "Erdnuss",
+    "peanuts": "Erdnuss",
+    "groundnut": "Erdnuss",
+    "groundnuts": "Erdnuss",
+    "peanut butter": "Erdnuss"
+   },
+   "fr": {
+    "arachide": "Erdnuss",
+    "arachides": "Erdnuss",
+    "cacahuète": "Erdnuss",
+    "cacahuètes": "Erdnuss"
+   },
+   "it": {
+    "arachide": "Erdnuss",
+    "arachidi": "Erdnuss"
+   },
+   "es": {
+    "maní": "Erdnuss",
+    "cacahuete": "Erdnuss",
+    "cacahuetes": "Erdnuss"
+   },
+   "el": {
+    "φιστίκια": "Erdnuss",
+    "αραχίδες": "Erdnuss"
+   },
+   "tr": {
+    "yer fıstığı": "Erdnuss"
+   },
+   "hr": {
+    "arašid": "Erdnuss",
+    "kikiriki": "Erdnuss"
+   }
+  },
+  "soybeans": {
+   "de": {
+    "Soja": "Soja",
+    "Tofu": "Soja",
+    "Tempeh": "Soja",
+    "Miso": "Soja",
+    "Edamame": "Soja",
+    "Sojasauce": "Soja",
+    "Shoyu": "Soja",
+    "Tamari": "Soja",
+    "Sojalecithin": "Soja"
+   },
+   "en": {
+    "soy": "Soja",
+    "soya": "Soja",
+    "tofu": "Soja",
+    "tempeh": "Soja",
+    "miso": "Soja",
+    "edamame": "Soja",
+    "soy sauce": "Soja",
+    "shoyu": "Soja",
+    "tamari": "Soja"
+   },
+   "fr": {
+    "soja": "Soja",
+    "tofu": "Soja",
+    "tempeh": "Soja",
+    "miso": "Soja",
+    "edamame": "Soja"
+   },
+   "it": {
+    "soia": "Soja",
+    "tofu": "Soja",
+    "tempeh": "Soja",
+    "miso": "Soja",
+    "edamame": "Soja"
+   }
+  },
+  "fish": {
+   "de": {
+    "Fisch": "Fisch",
+    "Lachs": "Fisch",
+    "Thunfisch": "Fisch",
+    "Sardelle": "Fisch",
+    "Sardine": "Fisch",
+    "Anchovis": "Fisch",
+    "Kabeljau": "Fisch",
+    "Dorsch": "Fisch",
+    "Forelle": "Fisch",
+    "Hering": "Fisch",
+    "Makrele": "Fisch",
+    "Seelachs": "Fisch",
+    "Kaviar": "Fisch",
+    "Fischsauce": "Fisch",
+    "Worcestersauce": "Fisch",
+    "Worcestershiresauce": "Fisch"
+   },
+   "en": {
+    "fish": "Fisch",
+    "salmon": "Fisch",
+    "tuna": "Fisch",
+    "anchovy": "Fisch",
+    "anchovies": "Fisch",
+    "cod": "Fisch",
+    "haddock": "Fisch",
+    "herring": "Fisch",
+    "mackerel": "Fisch",
+    "sardine": "Fisch",
+    "trout": "Fisch",
+    "fish sauce": "Fisch",
+    "worcestershire sauce": "Fisch",
+    "worcester sauce": "Fisch"
+   },
+   "fr": {
+    "poisson": "Fisch",
+    "saumon": "Fisch",
+    "thon": "Fisch",
+    "anchois": "Fisch",
+    "cabillaud": "Fisch",
+    "morue": "Fisch",
+    "hareng": "Fisch",
+    "maquereau": "Fisch",
+    "truite": "Fisch",
+    "sardine": "Fisch"
+   },
+   "it": {
+    "pesce": "Fisch",
+    "salmone": "Fisch",
+    "tonno": "Fisch",
+    "acciuga": "Fisch",
+    "acciughe": "Fisch",
+    "alici": "Fisch",
+    "merluzzo": "Fisch",
+    "baccalà": "Fisch",
+    "sgombro": "Fisch",
+    "trota": "Fisch",
+    "sardine": "Fisch"
+   },
+   "es": {
+    "merluza": "Fisch",
+    "bacalao": "Fisch",
+    "atún": "Fisch",
+    "anchoas": "Fisch",
+    "pescado": "Fisch",
+    "salmón": "Fisch"
+   },
+   "el": {
+    "ψάρι": "Fisch",
+    "ψάρια": "Fisch",
+    "τόνος": "Fisch",
+    "σολομός": "Fisch"
+   },
+   "tr": {
+    "balık": "Fisch",
+    "balığı": "Fisch"
+   }
+  },
+  "crustaceans": {
+   "de": {
+    "Garnele": "Krebstier",
+    "Krabbe": "Krebstier",
+    "Hummer": "Krebstier",
+    "Krebs": "Krebstier",
+    "Krebse": "Krebstier",
+    "Crevette": "Krebstier",
+    "Scampi": "Krebstier",
+    "Languste": "Krebstier",
+    "Shrimp": "Krebstier",
+    "Krill": "Krebstier",
+    "Kaisergranat": "Krebstier"
+   },
+   "en": {
+    "shrimp": "Krebstier",
+    "shrimps": "Krebstier",
+    "prawn": "Krebstier",
+    "prawns": "Krebstier",
+    "crab": "Krebstier",
+    "lobster": "Krebstier",
+    "crayfish": "Krebstier",
+    "langoustine": "Krebstier",
+    "scampi": "Krebstier",
+    "krill": "Krebstier"
+   },
+   "fr": {
+    "crevette": "Krebstier",
+    "crevettes": "Krebstier",
+    "crabe": "Krebstier",
+    "homard": "Krebstier",
+    "langouste": "Krebstier",
+    "langoustine": "Krebstier",
+    "écrevisse": "Krebstier",
+    "crustacés": "Krebstier"
+   },
+   "it": {
+    "gambero": "Krebstier",
+    "gamberi": "Krebstier",
+    "gamberetti": "Krebstier",
+    "granchio": "Krebstier",
+    "aragosta": "Krebstier",
+    "astice": "Krebstier",
+    "scampi": "Krebstier",
+    "mazzancolle": "Krebstier",
+    "crostacei": "Krebstier"
+   },
+   "nl": {
+    "garnaal": "Krebstier",
+    "garnalen": "Krebstier",
+    "kreeft": "Krebstier",
+    "krab": "Krebstier"
+   },
+   "el": {
+    "γαρίδες": "Krebstier",
+    "γαρίδα": "Krebstier",
+    "αστακός": "Krebstier",
+    "καβούρι": "Krebstier"
+   },
+   "tr": {
+    "karides": "Krebstier",
+    "ıstakoz": "Krebstier",
+    "yengeç": "Krebstier"
+   },
+   "hr": {
+    "škampi": "Krebstier",
+    "rakovi": "Krebstier",
+    "kozice": "Krebstier"
+   }
+  },
+  "molluscs": {
+   "de": {
+    "Muschel": "Weichtier",
+    "Schnecken": "Weichtier",
+    "Weinbergschnecke": "Weichtier",
+    "Calamari": "Weichtier",
+    "Kalmar": "Weichtier",
+    "Oktopus": "Weichtier",
+    "Tintenfisch": "Weichtier",
+    "Sepia": "Weichtier",
+    "Auster": "Weichtier"
+   },
+   "en": {
+    "mussel": "Weichtier",
+    "mussels": "Weichtier",
+    "clam": "Weichtier",
+    "clams": "Weichtier",
+    "oyster": "Weichtier",
+    "oysters": "Weichtier",
+    "squid": "Weichtier",
+    "octopus": "Weichtier",
+    "snail": "Weichtier",
+    "snails": "Weichtier",
+    "scallop": "Weichtier",
+    "scallops": "Weichtier",
+    "cuttlefish": "Weichtier",
+    "calamari": "Weichtier"
+   },
+   "fr": {
+    "moule": "Weichtier",
+    "moules": "Weichtier",
+    "huître": "Weichtier",
+    "huîtres": "Weichtier",
+    "calmar": "Weichtier",
+    "calamar": "Weichtier",
+    "poulpe": "Weichtier",
+    "escargot": "Weichtier",
+    "escargots": "Weichtier",
+    "seiche": "Weichtier",
+    "palourde": "Weichtier",
+    "mollusques": "Weichtier"
+   },
+   "it": {
+    "cozze": "Weichtier",
+    "vongole": "Weichtier",
+    "calamari": "Weichtier",
+    "calamaro": "Weichtier",
+    "polpo": "Weichtier",
+    "seppia": "Weichtier",
+    "seppie": "Weichtier",
+    "lumache": "Weichtier",
+    "ostriche": "Weichtier",
+    "totano": "Weichtier",
+    "molluschi": "Weichtier"
+   },
+   "es": {
+    "pulpo": "Weichtier",
+    "mejillones": "Weichtier",
+    "calamares": "Weichtier",
+    "almejas": "Weichtier"
+   },
+   "nl": {
+    "mossel": "Weichtier",
+    "mosselen": "Weichtier",
+    "inktvis": "Weichtier"
+   },
+   "el": {
+    "μύδια": "Weichtier",
+    "χταπόδι": "Weichtier",
+    "καλαμάρι": "Weichtier",
+    "καλαμάρια": "Weichtier"
+   },
+   "tr": {
+    "midye": "Weichtier",
+    "kalamar": "Weichtier",
+    "ahtapot": "Weichtier"
+   },
+   "hr": {
+    "dagnje": "Weichtier",
+    "lignje": "Weichtier",
+    "hobotnica": "Weichtier"
+   }
+  },
+  "sesame": {
+   "de": {
+    "Sesam": "Sesam",
+    "Tahin": "Sesam",
+    "Tahini": "Sesam",
+    "Tahina": "Sesam",
+    "Gomasio": "Sesam",
+    "Sesamöl": "Sesam"
+   },
+   "en": {
+    "sesame": "Sesam",
+    "tahini": "Sesam",
+    "tahina": "Sesam",
+    "gomasio": "Sesam"
+   },
+   "fr": {
+    "sésame": "Sesam",
+    "tahin": "Sesam",
+    "tahini": "Sesam"
+   },
+   "it": {
+    "sesamo": "Sesam",
+    "tahina": "Sesam",
+    "tahin": "Sesam"
+   },
+   "pt": {
+    "gergelim": "Sesam",
+    "sésamo": "Sesam"
+   },
+   "el": {
+    "ταχίνι": "Sesam",
+    "σουσάμι": "Sesam"
+   },
+   "tr": {
+    "tahin": "Sesam",
+    "susam": "Sesam"
+   }
+  },
+  "celery": {
+   "de": {
+    "Sellerie": "Sellerie",
+    "Selleriesalz": "Sellerie"
+   },
+   "en": {
+    "celery": "Sellerie",
+    "celeriac": "Sellerie"
+   },
+   "fr": {
+    "céleri": "Sellerie",
+    "céleri-rave": "Sellerie"
+   },
+   "it": {
+    "sedano": "Sellerie",
+    "sedano rapa": "Sellerie"
+   },
+   "tr": {
+    "kereviz": "Sellerie"
+   }
+  },
+  "mustard": {
+   "de": {
+    "Senf": "Senf",
+    "Senfsaat": "Senf",
+    "Senfkörner": "Senf",
+    "Senfmehl": "Senf"
+   },
+   "en": {
+    "mustard": "Senf"
+   },
+   "fr": {
+    "moutarde": "Senf"
+   },
+   "it": {
+    "senape": "Senf"
+   },
+   "tr": {
+    "hardal": "Senf"
+   },
+   "hr": {
+    "gorušica": "Senf",
+    "gorušice": "Senf",
+    "senf": "Senf"
+   }
+  },
+  "lupin": {
+   "de": {
+    "Lupine": "Lupine",
+    "Lupinen": "Lupine",
+    "Süsslupine": "Lupine"
+   },
+   "en": {
+    "lupin": "Lupine",
+    "lupine": "Lupine",
+    "lupins": "Lupine"
+   },
+   "fr": {
+    "lupin": "Lupine"
+   },
+   "it": {
+    "lupino": "Lupine",
+    "lupini": "Lupine"
+   },
+   "tr": {
+    "acı bakla": "Lupine"
+   }
+  },
+  "sulphites": {
+   "de": {
+    "Sulfit": "Sulfit",
+    "Sulfite": "Sulfit",
+    "Schwefeldioxid": "Sulfit",
+    "Disulfit": "Sulfit",
+    "Metabisulfit": "Sulfit",
+    "Bisulfit": "Sulfit",
+    "geschwefelt": "Sulfit",
+    "schweflige Säure": "Sulfit"
+   },
+   "en": {
+    "sulphite": "Sulfit",
+    "sulphites": "Sulfit",
+    "sulfite": "Sulfit",
+    "sulfites": "Sulfit",
+    "sulphur dioxide": "Sulfit",
+    "sulfur dioxide": "Sulfit",
+    "metabisulphite": "Sulfit",
+    "metabisulfite": "Sulfit",
+    "bisulphite": "Sulfit",
+    "bisulfite": "Sulfit"
+   },
+   "fr": {
+    "sulfites": "Sulfit",
+    "anhydride sulfureux": "Sulfit",
+    "dioxyde de soufre": "Sulfit",
+    "disulfite": "Sulfit",
+    "métabisulfite": "Sulfit"
+   },
+   "it": {
+    "solfiti": "Sulfit",
+    "anidride solforosa": "Sulfit",
+    "metabisolfito": "Sulfit",
+    "bisolfito": "Sulfit"
+   },
+   "el": {
+    "θειώδη": "Sulfit",
+    "θειώδες": "Sulfit"
+   },
+   "xx": {
+    "E220": "E220 (Sulfit)",
+    "E 220": "E220 (Sulfit)",
+    "E-220": "E220 (Sulfit)",
+    "E221": "E221 (Sulfit)",
+    "E 221": "E221 (Sulfit)",
+    "E-221": "E221 (Sulfit)",
+    "E222": "E222 (Sulfit)",
+    "E 222": "E222 (Sulfit)",
+    "E-222": "E222 (Sulfit)",
+    "E223": "E223 (Sulfit)",
+    "E 223": "E223 (Sulfit)",
+    "E-223": "E223 (Sulfit)",
+    "E224": "E224 (Sulfit)",
+    "E 224": "E224 (Sulfit)",
+    "E-224": "E224 (Sulfit)",
+    "E226": "E226 (Sulfit)",
+    "E 226": "E226 (Sulfit)",
+    "E-226": "E226 (Sulfit)",
+    "E227": "E227 (Sulfit)",
+    "E 227": "E227 (Sulfit)",
+    "E-227": "E227 (Sulfit)",
+    "E228": "E228 (Sulfit)",
+    "E 228": "E228 (Sulfit)",
+    "E-228": "E228 (Sulfit)"
    }
   }
  },
@@ -384,7 +1284,10 @@
     "Milchsäurebakterien": "meist unbedenklich, können aber auf Milch gezüchtet sein",
     "Schokolade": "enthält oft Milch – Zutaten prüfen",
     "Aroma": "kann Milchbestandteile enthalten",
-    "natürliches Aroma": "kann Milchbestandteile enthalten"
+    "natürliches Aroma": "kann Milchbestandteile enthalten",
+    "Nougat": "enthält oft Milch – Zutaten prüfen",
+    "Nugat": "enthält oft Milch – Zutaten prüfen",
+    "Kuvertüre": "enthält oft Milch – Zutaten prüfen"
    },
    "en": {
     "margarine": "kann Milchbestandteile enthalten",
@@ -396,7 +1299,9 @@
    "fr": {
     "margarine": "kann Milchbestandteile enthalten",
     "chocolat": "enthält oft Milch – Zutaten prüfen",
-    "arôme naturel": "kann Milchbestandteile enthalten"
+    "arôme naturel": "kann Milchbestandteile enthalten",
+    "glace": "Speiseeis (Schweiz: Glace) – enthält meist Milch",
+    "glaces": "Speiseeis – enthält meist Milch"
    },
    "it": {
     "margarina": "kann Milchbestandteile enthalten",
@@ -437,6 +1342,31 @@
    "hr": {
     "margarin": "kann Milchbestandteile enthalten",
     "čokolada": "enthält oft Milch – Zutaten prüfen"
+   }
+  },
+  "eggs": {
+   "en": {
+    "albumin": "Albumin – stammt oft aus Ei"
+   }
+  },
+  "gluten": {
+   "de": {
+    "Sojasauce": "enthält meist Weizen – Zutaten prüfen",
+    "Bier": "meist aus Gerstenmalz"
+   },
+   "en": {
+    "soy sauce": "enthält meist Weizen – Zutaten prüfen",
+    "beer": "meist aus Gerstenmalz"
+   }
+  },
+  "nuts": {
+   "de": {
+    "Krokant": "enthält meist Nüsse oder Mandeln"
+   }
+  },
+  "fish": {
+   "de": {
+    "Surimi": "Krebsfleisch-Imitat aus Fisch"
    }
   }
  },
@@ -624,10 +1554,6 @@
     "de": "Milchsäure (E270) – trotz Name keine Milch"
    },
    {
-    "phrase": "crema di nocciole",
-    "de": "Haselnusscreme – Zutaten prüfen"
-   },
-   {
     "phrase": "leche de coco",
     "de": "Kokosmilch (pflanzlich)"
    },
@@ -670,14 +1596,6 @@
    {
     "phrase": "ácido láctico",
     "de": "Milchsäure (E270) – trotz Name keine Milch"
-   },
-   {
-    "phrase": "crema de avellanas",
-    "de": "Haselnusscreme – Zutaten prüfen"
-   },
-   {
-    "phrase": "crema de cacao",
-    "de": "Kakaocreme – Zutaten prüfen"
    },
    {
     "phrase": "llet de coco",
@@ -870,11 +1788,159 @@
    {
     "phrase": "custard squash",
     "de": "Kürbis"
+   },
+   {
+    "phrase": "Kokosmilchpulver",
+    "de": "Kokosmilchpulver (pflanzlich)"
+   },
+   {
+    "phrase": "Kokosnussmilchpulver",
+    "de": "Kokosmilchpulver (pflanzlich)"
+   },
+   {
+    "phrase": "Kakaobuttermasse",
+    "de": "Kakaobutter (pflanzlich)"
+   },
+   {
+    "phrase": "Milchsäurekulturen",
+    "de": "Milchsäurekulturen – meist ohne Milch, im Zweifel nachfragen"
+   },
+   {
+    "phrase": "sucre glace",
+    "de": "Puderzucker"
+   },
+   {
+    "phrase": "butterbeans",
+    "de": "Butterbohnen"
+   },
+   {
+    "phrase": "butter beans",
+    "de": "Butterbohnen"
+   },
+   {
+    "phrase": "buttercup squash",
+    "de": "Kürbis"
+   },
+   {
+    "phrase": "milk thistle",
+    "de": "Mariendistel"
+   }
+  ],
+  "gluten": [
+   {
+    "phrase": "Buchweizen",
+    "de": "Buchweizen – trotz Name kein Weizen, glutenfrei"
+   },
+   {
+    "phrase": "Buchweizenmehl",
+    "de": "Buchweizen – trotz Name kein Weizen, glutenfrei"
+   },
+   {
+    "phrase": "Buchweizenflocken",
+    "de": "Buchweizen – trotz Name kein Weizen, glutenfrei"
+   },
+   {
+    "phrase": "Buchweizengrütze",
+    "de": "Buchweizen – trotz Name kein Weizen, glutenfrei"
+   },
+   {
+    "phrase": "grano saraceno",
+    "de": "Buchweizen – glutenfrei"
+   },
+   {
+    "phrase": "blé noir",
+    "de": "Buchweizen – glutenfrei"
+   }
+  ],
+  "nuts": [
+   {
+    "phrase": "noix de coco",
+    "de": "Kokosnuss – keine Schalenfrucht im Sinn der EU-Liste"
+   },
+   {
+    "phrase": "noix de muscade",
+    "de": "Muskatnuss – keine Schalenfrucht"
+   },
+   {
+    "phrase": "noce moscata",
+    "de": "Muskatnuss – keine Schalenfrucht"
+   },
+   {
+    "phrase": "noce di cocco",
+    "de": "Kokosnuss – keine Schalenfrucht im Sinn der EU-Liste"
+   }
+  ],
+  "molluscs": [
+   {
+    "phrase": "Zimtschnecke",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Zimtschnecken",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Nussschnecke",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Nussschnecken",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Mohnschnecke",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Mohnschnecken",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Rosinenschnecke",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Rosinenschnecken",
+    "de": "Gebäck – kein Weichtier"
+   },
+   {
+    "phrase": "Muschelnudeln",
+    "de": "Teigwaren in Muschelform"
+   },
+   {
+    "phrase": "Austernpilz",
+    "de": "Pilz – kein Weichtier"
+   },
+   {
+    "phrase": "Austernpilze",
+    "de": "Pilz – kein Weichtier"
+   },
+   {
+    "phrase": "Austernseitling",
+    "de": "Pilz – kein Weichtier"
+   },
+   {
+    "phrase": "Austernseitlinge",
+    "de": "Pilz – kein Weichtier"
+   },
+   {
+    "phrase": "oyster mushroom",
+    "de": "Pilz – kein Weichtier"
+   }
+  ],
+  "fish": [
+   {
+    "phrase": "Tintenfisch",
+    "de": "Tintenfisch – Weichtier, kein Fisch"
+   },
+   {
+    "phrase": "Tintenfische",
+    "de": "Tintenfisch – Weichtier, kein Fisch"
    }
   ]
  },
  "traces": {
-  "_info": "Satzanfänge, die einen Spuren-Hinweis einleiten. Alles bis zum Satzende gilt als 'Spuren'.",
+  "_info": "Satzanfänge, die einen Spuren-Hinweis einleiten. Alles bis zum Satzende gilt als 'Spuren'. 'closers' sind Wörter, mit denen ein solcher Satz endet (z. B. 'kann Spuren von Nüssen enthalten'). Was danach kommt, ist wieder eine normale Zutat.",
   "phrases": [
    "kann spuren",
    "spuren von",
@@ -936,6 +2002,11 @@
    "spor av",
    "voi sisältää",
    "jäämiä"
+  ],
+  "closers": [
+   "enthalten",
+   "möglich",
+   "bevatten"
   ]
  },
  "negations": {
@@ -973,5 +2044,148 @@
    "-mentes",
    "vapaa"
   ]
+ },
+ "stems": {
+  "milk": {
+   "en": {
+    "milkpowder": "Milchpulver",
+    "milkfat": "Milchfett",
+    "milksolid": "Milchtrockenmasse",
+    "milkprotein": "Milcheiweiss",
+    "wheypowder": "Molkenpulver",
+    "wheyprotein": "Molkeneiweiss",
+    "butterfat": "Butterfett",
+    "butteroil": "Butterreinfett",
+    "buttermilk": "Buttermilch",
+    "creamcheese": "Frischkäse",
+    "caseinate": "Kaseinat",
+    "yoghurt": "Joghurt",
+    "yogurt": "Joghurt",
+    "wholemilk": "Vollmilch",
+    "skimmilk": "Magermilch",
+    "cheesepowder": "Käsepulver",
+    "sweetcream": "Süssrahm"
+   },
+   "de_ch": {
+    "Anken": "Butter (Schweizerdeutsch)",
+    "Ziger": "Ziger (Molkenkäse)",
+    "Schotte": "Molke (Schweizerdeutsch)",
+    "Nidel": "Rahm (Schweizerdeutsch)",
+    "Nidle": "Rahm (Schweizerdeutsch)"
+   },
+   "hr": {
+    "maslac": "Butter",
+    "mlijek": "Milch",
+    "mlijec": "Milch-",
+    "mleko": "Milch",
+    "mlecn": "Milch-",
+    "vrhnj": "Sahne",
+    "sirutk": "Molke",
+    "jogurt": "Joghurt",
+    "kajmak": "Rahm",
+    "kazein": "Kasein",
+    "laktoz": "Laktose",
+    "pavlak": "Sahne"
+   },
+   "tr": {
+    "peynir": "Käse",
+    "tereyag": "Butter",
+    "yogurt": "Joghurt",
+    "yogurd": "Joghurt",
+    "kaymak": "Rahm",
+    "kaymag": "Rahm",
+    "sutlu": "mit Milch",
+    "suttozu": "Milchpulver",
+    "kasar": "Kaşar (Käse)",
+    "laktoz": "Laktose",
+    "kazein": "Kasein",
+    "kremal": "mit Sahne"
+   },
+   "el": {
+    "τυρι": "Käse",
+    "τυρο": "Käse-/Molke-",
+    "γιαουρτ": "Joghurt",
+    "γαλακτοκομ": "Milchprodukte",
+    "βουτυρ": "Butter",
+    "λακτοζ": "Laktose",
+    "καζεΐν": "Kasein",
+    "ανθοτυρ": "Anthotyro (Käse)",
+    "μανουρ": "Manouri (Käse)",
+    "χαλουμ": "Halloumi (Käse)",
+    "μυζηθρ": "Mizithra (Käse)"
+   },
+   "pl": {
+    "mlek": "Milch",
+    "mleczn": "Milch-",
+    "serwatk": "Molke",
+    "smietan": "Sahne",
+    "twarog": "Quark",
+    "twaroz": "Quark",
+    "kazein": "Kasein",
+    "maslank": "Buttermilch"
+   },
+   "cs": {
+    "mlecn": "Milch-",
+    "mliec": "Milch-",
+    "syrovatk": "Molke",
+    "srvatk": "Molke",
+    "smetan": "Sahne",
+    "smotan": "Sahne",
+    "tvaroh": "Quark",
+    "podmasl": "Buttermilch"
+   },
+   "hu": {
+    "tejsavo": "Molke",
+    "tejszin": "Sahne",
+    "tejpor": "Milchpulver",
+    "tejfol": "Sauerrahm"
+   },
+   "ro": {
+    "lapte": "Milch",
+    "smantan": "Sahne",
+    "branz": "Käse",
+    "iaurt": "Joghurt",
+    "cazein": "Kasein",
+    "laptel": "Milch"
+   },
+   "ru": {
+    "молок": "Milch",
+    "молоч": "Milch-",
+    "сливк": "Sahne",
+    "сливоч": "Sahne-/Butter-",
+    "сыворот": "Molke",
+    "сметан": "Sauerrahm",
+    "творог": "Quark",
+    "творож": "Quark",
+    "йогурт": "Joghurt",
+    "кефир": "Kefir",
+    "казеин": "Kasein",
+    "лактоз": "Laktose",
+    "мляко": "Milch",
+    "млечн": "Milch-",
+    "сирен": "Käse",
+    "кашкавал": "Käse",
+    "млек": "Milch",
+    "молочн": "Milch-",
+    "вершк": "Sahne",
+    "сметана": "Sauerrahm"
+   },
+   "it": {
+    "lattoprotein": "Milcheiweiss",
+    "sieroprotein": "Molkeneiweiss",
+    "lattiero": "Milch-",
+    "latticin": "Milchprodukte",
+    "besciamell": "Béchamel (mit Milch)"
+   },
+   "fr": {
+    "lactoprotein": "Milcheiweiss",
+    "lactoserum": "Molke"
+   },
+   "pt": {
+    "laticini": "Milchprodukte",
+    "lacticini": "Milchprodukte"
+   }
+  },
+  "_info": "Wortstämme: gelten am Wortanfang mit beliebiger Endung (z. B. 'maslac' findet auch 'maslaca'). Für Sprachen, die Wörter beugen. Nur Stämme eintragen, die nicht auch in harmlosen Wörtern vorkommen (Gegenbeispiel: 'masl' wäre auch 'maslina' = Olive)."
  }
 }

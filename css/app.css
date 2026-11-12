@@ -67,6 +67,9 @@ img { max-width: 100%; }
 /* ---------- shell ---------- */
 .app { min-height: 100%; display: flex; flex-direction: column; max-width: 560px; margin: 0 auto; }
 .offline-banner { position: sticky; top: 0; z-index: 20; background: var(--unk-bg); color: var(--unk); font-size: 13px; font-weight: 700; text-align: center; padding: calc(6px + env(safe-area-inset-top, 0px)) 12px 6px; }
+.update-banner { position: sticky; top: 0; z-index: 21; background: var(--warn-bg); color: var(--warn); font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 10px; padding: calc(8px + env(safe-area-inset-top, 0px)) 12px 8px; }
+.update-banner[hidden] { display: none; }
+.update-banner:not([hidden]) ~ main { padding-top: 12px; }
 main { flex: 1; padding: calc(12px + env(safe-area-inset-top, 0px)) 16px calc(var(--tabbar-h) + 24px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 14px; }
 .offline-banner:not([hidden]) + main { padding-top: 12px; }
 main.no-tabs { padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
@@ -134,6 +137,8 @@ p { margin: 0; }
 .chip.safe { background: var(--safe-bg); color: var(--safe); }
 .chip.caution { background: var(--warn-bg); color: var(--warn); }
 .chip.unsafe { background: var(--stop-bg); color: var(--stop); }
+.chip.review { background: var(--unk-bg); color: var(--unk); }
+.chip.beta { background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); font-size: 11px; padding: 1px 6px; vertical-align: 1px; }
 .chip.unknown { background: var(--unk-bg); color: var(--unk); }
 .chip.neutral { background: var(--surface-2); color: var(--muted); border: 1px solid var(--line); }
 
@@ -145,6 +150,7 @@ p { margin: 0; }
 .verdict.safe { background: var(--safe-bg); color: var(--safe); }
 .verdict.caution { background: var(--warn-bg); color: var(--warn); }
 .verdict.unsafe { background: var(--stop-bg); color: var(--stop); }
+.verdict.review { background: var(--unk-bg); color: var(--unk); }
 .verdict.unknown { background: var(--unk-bg); color: var(--unk); }
 .product { display: flex; gap: 12px; align-items: center; }
 .product img, .product .ph { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; background: var(--soft); flex: none; display: grid; place-items: center; font-size: 26px; }
@@ -155,6 +161,7 @@ p { margin: 0; }
 .finding .dot.unsafe { background: var(--stop-bg); color: var(--stop); }
 .finding .dot.caution { background: var(--warn-bg); color: var(--warn); }
 .finding .dot.safe { background: var(--safe-bg); color: var(--safe); }
+.finding .dot.review { background: var(--unk-bg); color: var(--unk); }
 .finding .dot.unknown { background: var(--unk-bg); color: var(--unk); }
 mark { border-radius: 5px; padding: 0 3px; font-weight: 800; background: var(--stop-bg); color: var(--stop); }
 mark.caution { background: var(--warn-bg); color: var(--warn); }

@@ -50,7 +50,7 @@ Rangfolge: `unsafe > caution > unknown > safe`.
 
 ## Offline
 
-`sw.js` legt beim Installieren alle App-Dateien ab („stale-while-revalidate“: sofort aus dem Speicher, im Hintergrund aktualisiert). Die Texterkennung (~27 MB) wird beim ersten Gebrauch oder über „Für unterwegs vorbereiten“ gespeichert. `tests/sw.test.js` stellt sicher, dass keine App-Datei in der Offline-Liste fehlt.
+`sw.js` legt beim Installieren alle App-Dateien ab („stale-while-revalidate“: sofort aus dem Speicher, im Hintergrund aktualisiert). Die Texterkennung (~27 MB) wird beim ersten Gebrauch oder über „Für unterwegs vorbereiten“ gespeichert. Der Cache-Name enthält die Versionsnummer (`APP_VERSION`): Eine neue Version lädt alle Dateien frisch, übernimmt sofort (`skipWaiting`, `clients.claim`) und meldet sich bei der offenen App, die „Neue Version verfügbar“ zeigt. `tests/sw.test.js` stellt sicher, dass keine App-Datei in der Offline-Liste fehlt.
 
 ## Sicherheit & Datenschutz
 

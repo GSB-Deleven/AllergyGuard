@@ -2,6 +2,8 @@
 // No account, no server. Wrapped in try/catch because private browsing or
 // full storage can make localStorage throw.
 
+import { validateBackupData, isValidPerson, personFromSharePayload, SHARE_PREFIX } from "../core/profile.js";
+
 const KEY = "allergyguard.v1";
 const MAX_HISTORY = 100;
 const MAX_PRODUCTS = 400;
@@ -34,7 +36,13 @@ function load() {
 
 function migrate(s) {
   // Future format changes go here. Unknown fields are kept.
-  return { ...empty(), ...s };
+  const next = { ...empty(), ...s };
+  // A profile with an unknown allergen or level (e.g. from an import before 0.2.0) would
+  // never find anything. It is kept so nothing is lost, but it can never be the active one.
+  if (!Array.isArray(next.people)) next.people = [];
+  const active = next.people.find((p) => p?.id === next.activeId);
+  if (!active || !isValidPerson(active)) next.activeId = next.people.find(isValidPerson)?.id || null;
+  return next;
 }
 
 function save() {
@@ -52,7 +60,7 @@ export const store = {
   update(fn) { fn(state); save(); },
 
   activePerson() {
-    return state.people.find((p) => p.id === state.activeId) || state.people[0] || null;
+    return state.people.find((p) => p.id === state.activeId && isValidPerson(p)) || state.people.find(isValidPerson) || null;
   },
   savePerson(person) {
     const i = state.people.findIndex((p) => p.id === person.id);
@@ -104,9 +112,12 @@ export const store = {
     return JSON.stringify({ app: "AllergyGuard", kind: "backup", exportedAt: state.lastBackupAt, data: rest }, null, 1);
   },
   importBackup(text) {
-    const parsed = JSON.parse(text);
+    let parsed;
+    try { parsed = JSON.parse(text); } catch { throw new Error("Die Datei ist keine gültige Sicherung (kein lesbares JSON)."); }
     if (parsed?.app !== "AllergyGuard" || parsed.kind !== "backup" || !parsed.data) throw new Error("Das ist keine AllergyGuard-Sicherung.");
-    state = migrate({ ...parsed.data, products: state.products });
+    // Checked completely before anything is replaced: a wrong file changes nothing.
+    const data = validateBackupData(parsed.data);
+    state = migrate({ ...data, products: state.products });
     save();
   },
   replaceAll(next) { state = migrate(next); save(); },
@@ -117,22 +128,19 @@ export function uid() {
   return Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
 }
 
-// ----- share one person via link / QR code -----
-// The data sits in the part after "#", which browsers never send to a server.
-const SHARE_PREFIX = "#/import/";
+// ----- share one person via link / QR code (format and checks: core/profile.js) -----
 
 export function personToShareHash(person) {
   const payload = { v: 1, n: person.name || "", a: person.allergens };
   return SHARE_PREFIX + base64url(JSON.stringify(payload));
 }
 
+/** @returns {object|null} a new person; throws (German message) if the content is not a valid profile */
 export function personFromShareHash(hash) {
   if (!hash.startsWith(SHARE_PREFIX)) return null;
-  const json = JSON.parse(fromBase64url(hash.slice(SHARE_PREFIX.length)));
-  if (json.v !== 1 || typeof json.a !== "object") throw new Error("Ungültiger Link");
-  const allergens = {};
-  for (const [k, v] of Object.entries(json.a)) if (["tracesOk", "avoidTraces", "severe"].includes(v)) allergens[String(k)] = v;
-  return { id: uid(), name: String(json.n || "").slice(0, 40), allergens, createdAt: new Date().toISOString() };
+  let json;
+  try { json = JSON.parse(fromBase64url(hash.slice(SHARE_PREFIX.length))); } catch { throw new Error("Dieser Profil-Link ist beschädigt."); }
+  return { id: uid(), ...personFromSharePayload(json), createdAt: new Date().toISOString() };
 }
 
 function base64url(str) {
