@@ -22,7 +22,7 @@ Web-App (PWA) zum Prüfen von Lebensmitteln auf Allergene, Fokus Milcheiweiss. D
 Damit eine neue Session ohne den alten Chat weiterarbeiten kann. Keine persönlichen Daten hier eintragen, das Repo ist öffentlich.
 
 **Stand**
-- Version 0.2.0 (Prüflogik gehärtet nach der Prüfung vom November 2026) liegt auf dem Branch `claude/project-thread-ba4bxu` und wartet auf den PR nach `main`. Online ist bis dahin 0.1.1: https://gsb-deleven.github.io/AllergyGuard/. Phase 1 ist fertig.
+- Version 0.2.0 (Prüflogik gehärtet nach der Prüfung vom November 2026) ist über [PR #27](https://github.com/GSB-Deleven/AllergyGuard/pull/27) in `main` gemergt und online: https://gsb-deleven.github.io/AllergyGuard/. Phase 1 ist fertig.
 - Roadmap: Issue #1. Epics: #3 (Phase 1b: Offline-Länderpakete #17, Schriften #18, Übersetzungen prüfen #19, Konto/Sync #25), #4 (KI), #5 (Speisekarte), #26 (Monetarisierung).
 - Git: Arbeit auf dem Session-Branch (bisher `claude/allergyguard-ios-app-z3xw3x`), veröffentlicht wird von `main`. Der Besitzer hat erlaubt, denselben Stand nach `main` zu pushen. Standard-Branch ist `main`. GitHub Pages (Quelle: Actions), Wiki-Sync und Labels sind eingerichtet.
 
