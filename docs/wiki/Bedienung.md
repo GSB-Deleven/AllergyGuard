@@ -13,7 +13,10 @@
 | ⛔ Rot „Enthält …!“ | Allergen in Zutaten oder Allergen-Angaben |
 | ⚠️ Gelb „Achtung“ | Spuren (je nach Einstellung) oder ein Wort, das *oft* das Allergen enthält |
 | ✅ Grün „Nichts gefunden“ | In den Angaben steht nichts davon. Das ist keine Garantie |
-| ❔ Grau „Keine Daten“ | Keine lesbare Zutatenliste, bitte fotografieren |
+| 🔎 Grau „Im erkannten Text nichts gefunden“ | Nur nach einem Foto: bitte mit der Verpackung vergleichen. Nach einem Foto gibt es nie Grün |
+| ❔ Grau „Keine Daten“ | Keine lesbare Zutatenliste, kein Zutaten-Text („siehe Verpackung“) oder eine Schrift, die die App nicht sicher prüfen kann. Nie Grün |
+
+Allergene mit dem Zeichen **Beta** (alle ausser Milcheiweiss und Laktose) haben eine noch unvollständige Wortliste. Bitte dort zusätzlich selbst lesen.
 
 Unter **„Warum?“** steht immer das Wort, das den Ausschlag gab, samt Übersetzung (z. B. *suero lácteo = Molke*). In der Zutatenliste sind Treffer farbig markiert.
 

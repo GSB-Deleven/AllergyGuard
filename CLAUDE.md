@@ -22,13 +22,18 @@ Web-App (PWA) zum Prüfen von Lebensmitteln auf Allergene, Fokus Milcheiweiss. D
 Damit eine neue Session ohne den alten Chat weiterarbeiten kann. Keine persönlichen Daten hier eintragen, das Repo ist öffentlich.
 
 **Stand**
-- Version 0.1.1 ist online: https://gsb-deleven.github.io/AllergyGuard/. Phase 1 ist fertig.
+- Version 0.2.0 (Prüflogik gehärtet nach der Prüfung vom November 2026) liegt auf dem Branch `claude/project-thread-ba4bxu` und wartet auf den PR nach `main`. Online ist bis dahin 0.1.1: https://gsb-deleven.github.io/AllergyGuard/. Phase 1 ist fertig.
 - Roadmap: Issue #1. Epics: #3 (Phase 1b: Offline-Länderpakete #17, Schriften #18, Übersetzungen prüfen #19, Konto/Sync #25), #4 (KI), #5 (Speisekarte), #26 (Monetarisierung).
 - Git: Arbeit auf dem Session-Branch (bisher `claude/allergyguard-ios-app-z3xw3x`), veröffentlicht wird von `main`. Der Besitzer hat erlaubt, denselben Stand nach `main` zu pushen. Standard-Branch ist `main`. GitHub Pages (Quelle: Actions), Wiki-Sync und Labels sind eingerichtet.
 
 **Entscheidungen (nicht neu diskutieren, ausser der Besitzer will es)**
 - PWA statt nativer App: kein Mac, gratis, Updates ohne App Store.
 - Profile nur lokal (localStorage), mehrere Personen möglich. Teilen per QR-Code **in der App** („Profil-QR scannen“), weil die Home-Bildschirm-App am iPhone einen eigenen Speicher hat, getrennt von Safari. Sicherung als Datei. Konto/Sync erst später (#25).
+- **Grün ist streng (seit 0.2.0):** nur bei plausibler Zutatenliste (mindestens zwei Zutaten, kein „siehe Verpackung“) in lateinischer oder griechischer Schrift. Andere Schriften: Treffer zählen, aber nie Grün. Foto-Ergebnisse sind nie Grün (Stufe `review`, „Im erkannten Text nichts gefunden“). Doppelgänger gelten nur als ganzes Wort. „frei/free“ verneint nur das Wort, an dem es hängt. Spuren-Hinweise enden an `)`, `:`, Zeilenumbruch, Satzende. `tests/safety.test.js` hält diese Fälle fest, nicht aufweichen.
+- **Wörterliste:** `data/synonyms.manual.json` hat neben `add`/`maybe`/`exceptions` den Abschnitt `stems` (Wortstämme, gelten am Wortanfang). Nur Stämme eintragen, die in keinem harmlosen Wort vorkommen. Ein Selbsttest prüft, dass jedes Listenwort gefunden wird.
+- **Beta:** Alle Allergene ausser Milcheiweiss und Laktose sind in App und README als „Beta“ markiert (`beta` in `src/core/allergens.js`).
+- **Version an drei Stellen:** `package.json`, `APP_VERSION` in `sw.js` (ergibt den Cache-Namen), `VERSION` in `src/ui/views/info.js`. Bei jeder Veröffentlichung erhöhen, sonst kommt das Update nicht auf die Handys (Test prüft Gleichheit).
+- **Import:** Sicherung und Profil-QR werden streng geprüft (`src/core/profile.js`), Unbekanntes wird abgelehnt.
 - Prüfung immer in allen Sprachen gleichzeitig. Milcheiweiss ≠ Laktose, „laktosefrei“ ist nie eine Entwarnung.
 - Texte der Allergie-Karte fest in `data/cards/` (11 Sprachen), nicht per KI übersetzt. Nur Deutsch ist als „geprüft“ markiert.
 - **Tonalität der Karte:** Nur die Stufe „Schwere Reaktion“ spricht von Gefahr und nennt den Notruf (`tracesSevere`, `introSevere`). „Auch Spuren meiden“ bleibt sachlich („Bitte auch kleinste Spuren vermeiden“). Hauptnutzer ist ein Kind mit Milcheiweiss-Allergie: Reaktion Bauchschmerzen und Ausschlag, keine Anaphylaxie.
@@ -41,6 +46,6 @@ Damit eine neue Session ohne den alten Chat weiterarbeiten kann. Keine persönli
 - Playwright/Chromium ist vorinstalliert, Import: `$(npm root -g)/playwright/index.mjs` (z. B. `PLAYWRIGHT_PATH=... node tools/screenshots.mjs`).
 - Das GitHub-MCP kann keine Labels oder Milestones anlegen. Labels kommen aus `.github/labels.yml` über den Workflow „Labels einrichten“.
 
-**Nächste sinnvolle Schritte:** Kamera-Scan am echten iPhone testen, Offline-Länderpakete (#17), Übersetzungen prüfen lassen (#19).
+**Nächste sinnvolle Schritte:** Korpus aus echten Zutatenlisten als Dauertest, Wortlisten der Beta-Allergene ausbauen, Kamera-Scan am echten iPhone testen, Offline-Länderpakete (#17), Übersetzungen prüfen lassen (#19).
 
 **Kommunikation:** Der Besitzer ist Anfänger. Deutsch, einfach, Klick für Klick. GitHub-Einstellungen, die nur er ändern kann, als nummerierte Schritte beschreiben.

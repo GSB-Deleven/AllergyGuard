@@ -24,4 +24,4 @@ AllergyGuard ist eine Web-App. Du installierst sie direkt aus Safari, ohne App S
 - **Zweites Handy:** App installieren → **Profil → Profil-QR scannen** → QR-Code vom ersten Handy scannen.
 
 ## Updates
-Passieren automatisch. Neue Versionen werden beim Öffnen im Hintergrund geladen und sind beim nächsten Start aktiv.
+Passieren automatisch. Die App sucht beim Öffnen nach einer neuen Version und lädt sie im Hintergrund. Ist sie bereit, erscheint oben **„Neue Version verfügbar“** mit dem Knopf **„Neu laden“**. Die Versionsnummer steht unter Info (ⓘ) ganz unten.

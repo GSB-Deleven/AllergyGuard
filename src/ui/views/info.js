@@ -28,7 +28,7 @@ export function render(main) {
         <li><b>Grau – Keine Daten:</b> Es gibt keine lesbare Zutatenliste, der Text ist keine Zutatenliste oder er steht in einer Schrift, die die App nicht sicher prüfen kann (zum Beispiel Chinesisch oder Arabisch). Die App sagt dann nie „grün“.</li>
         <li><b>Beta:</b> Am gründlichsten geprüft wird Milcheiweiss. Für die anderen Allergene ist die Wortliste noch nicht vollständig.</li>
       </ul>
-      <p class="small muted">Gesucht wird immer in allen Sprachen gleichzeitig, mit über 7'000 Begriffen (davon über 4'000 für Milch) aus der offenen Open-Food-Facts-Datenbank und einer von Hand gepflegten Liste.</p>
+      <p class="small muted">Gesucht wird immer in allen Sprachen gleichzeitig, mit über 8'000 Begriffen (davon über 4'000 für Milch) aus der offenen Open-Food-Facts-Datenbank und einer von Hand gepflegten Liste.</p>
     </section>
 
     <section class="card stack">
