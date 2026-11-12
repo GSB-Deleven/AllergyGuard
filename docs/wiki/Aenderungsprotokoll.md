@@ -14,6 +14,8 @@ Eine Prüfung im November 2026 hat Fälle gefunden, in denen die App fälschlich
 - **Import:** Eine Sicherung oder ein Profil-QR mit unbekanntem Allergen oder unbekannter Stufe wird mit einer Meldung abgelehnt. Ein ungültiges Profil wird nie aktiv.
 - **Updates:** Jede Version hat ihren eigenen Offline-Speicher. Ist eine neue Version geladen, zeigt die App „Neue Version verfügbar“ mit dem Knopf „Neu laden“. Beim Wechsel von 0.1.x lädt die App einmal von selbst neu.
 
+**Bekannte Grenzen (noch offen):** Lesefehler ohne erkennbares Muster („Mllch“, „M ilch“) findet die App nicht. Steht ein Milch-Wort in einer Komma-Aufzählung direkt nach „Spuren von …“, zählt es als Spur. Normaler Fliesstext mit Komma kann als Zutatenliste durchgehen. Darum gilt weiter: Grün heisst „nichts gefunden“. Im Zweifel die Zutatenliste selbst lesen.
+
 ## 0.1.1
 - Allergie-Karte: Bei „Auch Spuren meiden“ heisst es jetzt sachlich „Bitte auch kleinste Spuren vermeiden“. Von „gefährlich“ spricht die Karte nur noch bei „Schwere Reaktion“.
 - Allergen-Auswahl auf dem Handy zweispaltig und besser lesbar (vorher gequetscht)
